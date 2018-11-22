@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qcx.mini.widget.RoundImageView
+        android:id="@+id/dialog_input_price_backView"
+        android:layout_width="match_parent"
+        android:layout_height="165px"
+        android:layout_marginLeft="53px"
+        android:layout_marginRight="53px"
+        android:layout_marginTop="142px"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53px"
+        android:layout_marginRight="53px"
+        android:layout_marginTop="142px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20px"
+            android:text="自定义价格"
+            android:textColor="#FF030303"
+            android:textSize="17px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10px"
+            android:text="请输入单个座位的车费"
+            android:textColor="#FF030303"
+            android:textSize="13px" />
+
+        <TextView
+            android:id="@+id/dialog_input_price_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="20px"
+            android:autoSizeMaxTextSize="3px"
+            android:background="@drawable/bg_circular_white_border_gray1"
+            android:hint="请输入5~25之间的整数金额"
+            android:maxEms="4"
+            android:paddingBottom="3px"
+            android:paddingLeft="4px"
+            android:paddingTop="3px"
+            android:singleLine="true"
+            android:textColor="#FF616266"
+            android:textSize="13px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="12px"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45px"
+            android:divider="@drawable/divider_gray_horizontal"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/dialog_input_price_cancel"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#FF007AFF"
+                android:textSize="17px" />
+
+            <TextView
+                android:id="@+id/dialog_input_price_submit"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="#FF007AFF"
+                android:textSize="17px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/dialog_input_price_keyboard_back_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <com.qcx.mini.widget.numSoftKeyboart.NumSoftKeyboard
+            android:id="@+id/dialog_input_price_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#A6D2D5DB" />
+    </FrameLayout>
+
+</FrameLayout>

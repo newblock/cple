@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dexfun.layout.DexLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<View android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5px"-->
+    <!--android:background="#999999"-->
+    <!--android:paddingLeft="16px"-->
+    <!--android:paddingRight="16px"/>-->
+    <com.dexfun.layout.DexLinearLayout
+        android:id="@+id/item_check_address_data"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_check_address_img"
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:layout_marginLeft="16px"
+            android:src="@mipmap/icon_place" />
+
+        <com.dexfun.layout.DexLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50px"
+            android:layout_marginLeft="4px"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_check_address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京南站"
+                android:textColor="#FF0F151E"
+                android:textSize="15px" />
+
+            <TextView
+                android:id="@+id/item_check_address_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="某某外大街23号"
+                android:textColor="#FF9BA7BA"
+                android:textSize="13px" />
+        </com.dexfun.layout.DexLinearLayout>
+    </com.dexfun.layout.DexLinearLayout>
+
+    <com.dexfun.layout.DexFrameLayout
+        android:id="@+id/item_check_address_clear"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="清空历史记录"
+            android:textColor="#FF516484"
+            android:textSize="13px" />
+    </com.dexfun.layout.DexFrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:background="#FFF2F2F5" />
+
+</com.dexfun.layout.DexLinearLayout>

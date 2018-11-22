@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5px"
+        android:elevation="5dp"
+        android:background="@drawable/bg_circular_white_top"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:src="@mipmap/icon_delete" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="售出QC"
+                android:textColor="#FF232426"
+                android:textSize="16px"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="68px"
+                android:layout_height="24px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:text="今日市值"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10px"
+                android:text="￥--"
+                android:textColor="#FFF5A623"
+                android:textSize="17px"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="49px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="68px"
+                android:layout_height="24px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:text="出售数量"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_marginRight="60px"
+                android:layout_height="24px"
+                android:hint="可用18.61QC"
+                android:inputType="numberDecimal"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="93px"
+                android:textColor="#FFC8C9CC"
+                android:textSize="17px" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_line"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="93px"
+                android:layout_marginRight="15px"
+                android:layout_marginBottom="10px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:textColor="#FF4186E7"
+                android:textSize="14px"
+                android:layout_marginRight="15px"
+                android:layout_gravity="center_vertical|right"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="68px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:text="矿工费"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:text="0.25QC"
+                android:textColor="#FF616266"
+                android:textSize="17px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="16px"
+                android:text="(售出数量的2.5%)"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4px"
+                android:textColor="#FF939499"
+                android:textSize="11px"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/dialog_qc_sold_submit"
+            android:layout_width="200px"
+            android:layout_height="44px"
+            android:background="@drawable/bg_circular_gradient_blue"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="提交"
+            android:layout_marginTop="13px"
+            android:layout_marginBottom="16px"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16px"
+            />
+    </LinearLayout>
+
+</LinearLayout>

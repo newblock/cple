@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:overScrollMode="never"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/img_explore_back">
+
+            <LinearLayout
+                android:id="@+id/fragment_force_force_view"
+                android:layout_width="wrap_content"
+                android:layout_height="26px"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="33px"
+                android:background="@drawable/bg_circular_blue_6">
+
+                <ImageView
+                    android:layout_width="16px"
+                    android:layout_height="16px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:src="@mipmap/icon_yuanli_wht" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7px"
+                    android:text="原力"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5px"
+                    android:text="10299"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14px" />
+
+                <ImageView
+                    android:layout_width="14px"
+                    android:layout_height="14px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8px"
+                    android:src="@mipmap/icon_return_left_white_mini" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_force_cple_view"
+                android:layout_width="wrap_content"
+                android:layout_height="26px"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="74px"
+                android:background="@drawable/bg_circular_blue_6">
+
+                <ImageView
+                    android:layout_width="16px"
+                    android:layout_height="16px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10px"
+                    android:src="@mipmap/icon_qc_wht" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7px"
+                    android:text="CPLE"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5px"
+                    android:text="123.5879"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14px" />
+
+                <ImageView
+                    android:layout_width="14px"
+                    android:layout_height="14px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8px"
+                    android:src="@mipmap/icon_return_left_white_mini" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_force_ranking_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="14px"
+                android:layout_marginLeft="24px">
+
+                <ImageView
+                    android:layout_width="44px"
+                    android:layout_height="44px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="21px"
+                    android:src="@mipmap/btn_paihang_new" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="排行榜"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="12px" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_force_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="14px"
+                android:layout_marginRight="24px">
+
+                <ImageView
+                    android:layout_width="44px"
+                    android:layout_height="44px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="21px"
+                    android:src="@mipmap/btn_yaoqing_new" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:text="邀请好友"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="12px" />
+            </FrameLayout>
+
+            <com.qcx.mini.widget.BallsView
+                android:layout_width="match_parent"
+                android:layout_height="413px" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16px"
+            android:text="做任务赚原力"
+            android:textColor="#FF232426"
+            android:textSize="16px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4px"
+                android:layout_height="20px"
+                android:layout_marginLeft="16px"
+                android:background="#FF4186E7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:text="基础任务"
+                android:textColor="#FF4186E7"
+                android:textSize="14px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:text="高分任务,轻松获取原力"
+                android:textColor="#FF939499"
+                android:textSize="11px" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_force_base_task_list"
+            android:layout_width="match_parent"
+            android:layout_height="132px"
+            android:layout_marginTop="16px"
+            android:overScrollMode="never" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4px"
+                android:layout_height="20px"
+                android:layout_marginLeft="16px"
+                android:background="#FF4186E7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:text="日常任务"
+                android:textColor="#FF4186E7"
+                android:textSize="14px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:text="为拼车产业贡献价值,获得不限量原力奖励"
+                android:textColor="#FF939499"
+                android:textSize="11px" />
+        </LinearLayout>
+
+        <com.qcx.mini.widget.AllHeightRecyclerView
+            android:id="@+id/fragment_force_task_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5px"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

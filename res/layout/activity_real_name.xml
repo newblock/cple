@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.RealNameActivity">
+
+    <include layout="@layout/titlebar_1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="32px"
+        android:background="#FF64B5F6">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成实名认证+100原力"
+                android:textColor="#FFFFFFFF"
+                android:textSize="11px" />
+            <ImageView
+                android:layout_width="16px"
+                android:layout_height="16px"
+                android:background="@color/gray_bg"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/real_name_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29px"
+            android:layout_marginRight="29px"
+            android:background="@mipmap/jindu01"
+            android:layout_marginTop="15px"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="15px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:text="身份认证"
+                android:textColor="#FF616266"
+                android:textSize="12px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="89px"
+                android:text="提交车辆证件信息"
+                android:textColor="#FF939499"
+                android:textSize="12px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="213px"
+                android:text="后台审核"
+                android:textColor="#FF939499"
+                android:textSize="12px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="短信通知"
+                android:textColor="#FF939499"
+                android:layout_gravity="right"
+                android:layout_marginRight="15px"
+                android:textSize="12px" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="15px"
+        android:text="身份实名认证"
+        android:textColor="#FF232426"
+        android:textSize="14px" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请填写真实姓名及身份证号码，每次出行将获赠30万意外险."
+        android:textColor="#FF939499"
+        android:textSize="11px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="4px"
+        />
+    <EditText
+        android:id="@+id/real_name_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:hint="输入真实姓名"
+        android:textSize="17px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="4px"
+        android:gravity="center_vertical"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:background="@drawable/rc_edit_text_background" />
+    <EditText
+        android:id="@+id/real_name_id_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:hint="输入身份证号码"
+        android:textSize="17px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="4px"
+        android:gravity="center_vertical"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:background="@drawable/rc_edit_text_background" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/real_name_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:text="下一步"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16px"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:background="@drawable/bg_circular_gray1"
+            />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_circular_white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15px"
+        android:textSize="14px"
+        android:textColor="#FF616266"
+        android:text="分享到微信"
+        />
+    <TextView
+        android:id="@+id/item_travel_none_head_share"
+        android:layout_width="80px"
+        android:layout_height="30px"
+        android:textSize="14px"
+        android:textColor="#FF4186E7"
+        android:text="分享"
+        android:layout_gravity="center_vertical|end"
+        android:gravity="center"
+        android:layout_marginRight="15px"
+        android:background="@drawable/bg_circular_gray_5"/>
+
+</FrameLayout>

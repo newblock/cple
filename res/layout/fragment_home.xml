@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_home_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qcx.mini.widget.NotDriverView
+            android:id="@+id/fragment_home_not_driver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/fragment_home_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fragment_home_search_travel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:layout_marginRight="8px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/bg_circular_white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="14px"
+                        android:layout_height="14px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15px"
+                        android:src="@mipmap/icon_start" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15px"
+                        android:singleLine="true"
+                        android:text="正在获取当前位置"
+                        android:textColor="#FF939499"
+                        android:textSize="14px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="44px"
+                    android:background="@color/gray_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="14px"
+                        android:layout_height="14px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15px"
+                        android:src="@mipmap/icon_end" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15px"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="你要去哪儿"
+                        android:textColor="#FFFF9800"
+                        android:textSize="14px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15px"
+                        android:background="@drawable/bg_circular_yellow_2"
+                        android:paddingBottom="2px"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px"
+                        android:paddingTop="2px"
+                        android:text="+20原力"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="12px" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_home_travels_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:layout_marginRight="8px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/bg_circular_white"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15px"
+                        android:text="待完成行程"
+                        android:textColor="#FF232426"
+                        android:textSize="16px" />
+
+                    <TextView
+                        android:id="@+id/fragment_home_travel_all"
+                        android:layout_width="100px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="15px"
+                        android:gravity="center_vertical|right"
+                        android:text="全部"
+                        android:textColor="#FF939499"
+                        android:textSize="12px" />
+
+                </FrameLayout>
+
+                <include
+                    android:id="@+id/fragment_home_travel_1"
+                    layout="@layout/item_travel_3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="54px"
+                    android:background="@color/gray_line" />
+
+                <include
+                    android:id="@+id/fragment_home_travel_2"
+                    layout="@layout/item_travel_3" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginLeft="8px"
+                android:layout_marginRight="8px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/bg_circular_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8px"
+                android:layout_marginRight="8px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/bg_circular_white"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15px"
+                        android:text="常用路线"
+                        android:textColor="#FF232426"
+                        android:textSize="16px" />
+
+                    <TextView
+                        android:id="@+id/fragment_home_line_all"
+                        android:layout_width="100px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginRight="15px"
+                        android:gravity="center_vertical|end"
+                        android:text="管理"
+                        android:textColor="#FF939499"
+                        android:textSize="12px" />
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray_line" />
+
+                <com.qcx.mini.widget.AllHeightRecyclerView
+                    android:id="@+id/fragment_home_lines_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/fragment_home_no_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="36px"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24px"
+                            android:layout_height="24px"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/home_icon_sign_line" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8px"
+                            android:text="添加常用路线可快速匹配和发布行程"
+                            android:textColor="#FF616266"
+                            android:textSize="16px" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="35px"
+                        android:layout_marginTop="77px"
+                        android:background="@drawable/bg_border_gray"
+                        android:gravity="center"
+                        android:paddingBottom="6px"
+                        android:paddingTop="6px"
+                        android:text="添加"
+                        android:textColor="#FF484848"
+                        android:textSize="14px" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginBottom="75px"
+                android:layout_marginLeft="8px"
+                android:layout_marginRight="8px"
+                android:layout_marginTop="8px"
+                android:background="@drawable/bg_circular_white" />
+
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.qcx.mini.activity.ShareGroupToPYQActivity">
+
+    <FrameLayout
+        android:id="@+id/share_group_to_pyq_shareView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74px"
+            android:layout_marginTop="45px"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="74px"
+                android:layout_height="74px"
+                android:src="@mipmap/icon_group"
+                android:layout_marginLeft="27px"/>
+            <TextView
+                android:id="@+id/share_group_to_pyq_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#ff000000"
+                android:textSize="17px"
+                android:layout_marginRight="26px"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/share_group_to_pyq_img"
+            android:layout_width="285px"
+            android:layout_height="285px"
+            android:layout_marginTop="154px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="45px"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/share_travel_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/bg_circular_green"
+        android:gravity="center"
+        android:text="分享到微信朋友圈"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16px" />
+
+    <TextView
+        android:id="@+id/share_travel_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#FF383838"
+        android:textSize="16px" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <!--<string name="app_name">趣出行探索版</string>-->
+    <!--<string name="amap_key">a3f1f986566e8a517495b36c3915d65e</string>-->
+
+    <string name="app_name">趣出行</string>
+    <string name="amap_key">623be18c826a9c6f31c02ab6a2363c60</string>
+    <string name="rong_key">mgb7ka1nm3p8g</string>
+
+    <string name="force_describe">趣出行坚持“让价值贡献者获得价值”的理念,用户在趣出行所贡献的一切价值都将转化为原力,持有原力的用户可以参与每日的趣钻（CPLE）产出,获得属于自己的趣钻(CPLE)。用户完成不同任务将获得不同数量的原力,同一时段内,原力越高,获得的趣钻(CPLE)越多。</string>
+
+</resources>

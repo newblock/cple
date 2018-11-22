@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.qcx.mini.widget.CircleImageView
+        android:id="@+id/item_comment_content_v1_icon"
+        android:layout_width="32px"
+        android:layout_height="32px"
+        android:layout_marginTop="22px"
+        android:layout_marginLeft="16px"
+        android:src="@mipmap/img_me"/>
+    <TextView
+        android:id="@+id/item_comment_content_v1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/item_comment_content_v1_icon"
+        android:layout_marginLeft="8px"
+        android:layout_marginTop="15px"
+        android:textSize="13px"
+        android:textColor="#6095D3"
+        android:text="------"/>
+
+    <TextView
+        android:id="@+id/item_comment_content_v1_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16px"
+        android:textColor="#484848"
+        android:text="--------------------"
+        android:layout_alignStart="@+id/item_comment_content_v1_name"
+        android:layout_below="@+id/item_comment_content_v1_name"
+        android:layout_marginTop="3px"/>
+    <TextView
+        android:id="@+id/item_comment_content_v1_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14px"
+        android:text="-------------------"
+        android:textColor="#ABB1BA"
+        android:layout_alignStart="@+id/item_comment_content_v1_content"
+        android:layout_below="@+id/item_comment_content_v1_content"
+        android:layout_marginTop="2px"
+        />
+
+</RelativeLayout>

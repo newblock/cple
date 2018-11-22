@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qcx.mini.activity.ChangeStartOrEndLocationActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/change_start_or_end_location_mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="82px"
+        android:background="@drawable/bg_circular_white_top"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/change_start_or_end_location_img"
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24px"
+            android:src="@mipmap/icon_map_scd" />
+
+        <TextView
+            android:id="@+id/change_start_or_end_location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4px"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#FF484848"
+            android:textSize="13px" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="82px"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/change_start_or_end_location_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:background="@drawable/bg_circular_gradient_blue"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16px" />
+
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/change_start_or_end_location_close"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="8px"
+        android:src="@mipmap/btn_close"/>
+
+</FrameLayout>

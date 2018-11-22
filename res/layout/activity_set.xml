@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.SetActivity">
+
+    <include layout="@layout/titlebar_1" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/set_icon_view"
+                android:layout_width="match_parent"
+                android:layout_height="80px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="头像"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:id="@+id/set_icon"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="36px"
+                    android:src="@mipmap/img_me" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:background="#FFEDEDF0" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/set_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="昵称"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/set_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="36px"
+                    android:text="---"
+                    android:textColor="#FF484848"
+                    android:textSize="17px" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:background="#FFEDEDF0" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/set_sex_view"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="性别"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/set_sex_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="36px"
+                    android:text=""
+                    android:textColor="#FF484848"
+                    android:textSize="17px" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:background="#FFEDEDF0" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/set_age_view"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="年龄"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/set_age_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="36px"
+                    android:text=""
+                    android:textColor="#FF484848"
+                    android:textSize="17px" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:background="#FFEDEDF0" />
+            </FrameLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6px"
+                android:layout_gravity="bottom"
+                android:background="#FFEDEDF0" />
+
+            <FrameLayout
+                android:id="@+id/set_phone_view"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="手机"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/set_phone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:text="------"
+                    android:textColor="#FF484848"
+                    android:textSize="17px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:background="#FFEDEDF0" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/set_address"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="修改家和公司地址"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:background="#FFEDEDF0" />
+
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/set_line"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="我的常用路线"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6px"
+                android:layout_gravity="bottom"
+                android:background="#FFEDEDF0" />
+            <FrameLayout
+                android:id="@+id/set_zmxy_view"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="芝麻信用"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/set_zmxy_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="36px"
+                    android:text=""
+                    android:textColor="#FF484848"
+                    android:textSize="17px" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:background="#FFEDEDF0" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/set_auth"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="车主认证"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/set_auth_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="36px"
+                    android:text=""
+                    android:textColor="#FF484848"
+                    android:textSize="17px" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6px"
+                android:layout_gravity="bottom"
+                android:background="#FFEDEDF0" />
+            <FrameLayout
+                android:id="@+id/set_clause_view"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="法律条款及隐私政策"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16px"
+                    android:layout_marginRight="16px"
+                    android:background="#FFEDEDF0" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/set_about_view"
+                android:layout_width="match_parent"
+                android:layout_height="60px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="关于趣出行"
+                    android:textColor="#FF737373"
+                    android:textSize="17px" />
+                <com.qcx.mini.widget.CircleImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:src="@mipmap/icon_return_left" />
+
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6px"
+                android:layout_gravity="bottom"
+                android:background="#FFEDEDF0" />
+            <FrameLayout
+                android:id="@+id/set_logout"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:layout_marginBottom="90px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="退出登录"
+                    android:textColor="#FF737373"
+                    android:textSize="17px"/>
+
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

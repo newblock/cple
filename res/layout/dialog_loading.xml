@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_circular_gray">
+    <ImageView
+        android:id="@+id/dialog_loading_img"
+        android:layout_gravity="center"
+        android:layout_margin="8px"
+        android:layout_width="45px"
+        android:layout_height="45px">
+
+
+    </ImageView>
+
+</FrameLayout>

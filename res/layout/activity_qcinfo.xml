@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.QCInfoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/title_bar_left"
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_marginLeft="10px"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@mipmap/btn_nav_back" />
+
+        <TextView
+            android:id="@+id/title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FF000000"
+            android:textSize="17px"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/title_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="15px"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@mipmap/btn_nav_add"
+            android:text="排行榜"
+            android:textColor="#FF616266"
+            android:textSize="14px"/>
+    </FrameLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:elevation="0dp">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="15px"
+                        android:layout_marginTop="9px"
+                        android:background="@drawable/bg_circular_gradient_blue">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginTop="15px"
+                            android:text="当前QC"
+                            android:textColor="@color/white"
+                            android:textSize="14px" />
+
+                        <TextView
+                            android:id="@+id/qc_info_qc_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginTop="43px"
+                            android:text="78.6"
+                            android:textColor="@color/white"
+                            android:textSize="30px"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/qc_info_qc_num"
+                            android:layout_marginLeft="10px"
+                            android:layout_toEndOf="@+id/qc_info_qc_num"
+                            android:layout_marginBottom="3px"
+                            android:text="市值≈￥9.27"
+                            android:textColor="@color/white"
+                            android:textSize="14px" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginLeft="15px"
+                            android:layout_marginRight="15px"
+                            android:layout_marginTop="88px"
+                            android:background="#99ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/qc_info_qc_num"
+                            android:layout_marginTop="103px"
+                            android:text="今日原力300"
+                            android:textColor="@color/white"
+                            android:textSize="12px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="15px"
+                            android:layout_marginTop="103px"
+                            android:text="预计可获QC 16.48"
+                            android:textColor="@color/white"
+                            android:textSize="12px" />
+
+                        <TextView
+                            android:id="@+id/qc_info_sold"
+                            android:layout_width="60px"
+                            android:layout_height="22px"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="21px"
+                            android:layout_marginTop="33px"
+                            android:background="@drawable/bg_circular_white"
+                            android:gravity="center"
+                            android:text="售出"
+                            android:textColor="#FF4581FF"
+                            android:textSize="13px"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="22px"
+                        android:layout_marginTop="30px">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15px"
+                            android:text="QC市值走势"
+                            android:textColor="#FF232426"
+                            android:textSize="16px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginRight="15px"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="本月"
+                            android:textSize="15px" />
+
+                    </FrameLayout>
+
+                    <com.qcx.mini.widget.LineGraphView
+                        android:id="@+id/qc_info_line_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="141px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="15px"
+                        android:layout_marginTop="6px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10px"
+                        android:background="@color/gray_bg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QC明细"
+                        android:textColor="#FF232426"
+                        android:textSize="16px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginTop="12px"
+                        android:layout_marginBottom="6px"/>
+
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/qc_info_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

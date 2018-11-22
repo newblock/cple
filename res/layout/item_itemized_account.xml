@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@drawable/bg_bottom_gray_line"-->
+        <!--android:layout_marginLeft="16px"-->
+        <!--android:layout_marginRight="16px"-->
+        <!--android:layout_height="70px">-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:text="车费收入"
+            android:gravity="center_vertical"
+            android:layout_marginTop="13px"
+            android:textColor="#FF484848"
+            android:textSize="17px"
+            android:layout_marginLeft="16px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18px"
+            android:gravity="center_vertical"
+            android:text="2017年3月22日16:06"
+            android:textColor="#FF737373"
+            android:textSize="13px"
+            android:layout_marginTop="39px"
+            android:layout_marginBottom="13px"
+            android:layout_marginLeft="16px"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:text="+10元"
+            android:textColor="#FFB9BDC3"
+            android:textSize="17px"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="16px"
+            />
+    <!--</FrameLayout>-->
+
+</FrameLayout>

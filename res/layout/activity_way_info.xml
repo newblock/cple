@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qcx.mini.activity.WayInfoActivity">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/way_info_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50px">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/way_info_appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="220px"
+                            android:gravity="center">
+
+                            <com.amap.api.maps.MapView
+                                android:id="@+id/way_info_mapView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                            <ImageView
+                                android:id="@+id/way_info_group_img"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/way_info_title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36px"
+                            android:layout_marginLeft="16px"
+                            android:layout_marginTop="16px"
+                            android:gravity="center"
+                            android:text="--------"
+                            android:textColor="#FF484848"
+                            android:textSize="25px" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4px">
+
+                            <TextView
+                                android:id="@+id/way_info_driver_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="16px"
+                                android:layout_marginLeft="16px"
+                                android:background="@drawable/bg_circular_blue_2"
+                                android:gravity="center"
+                                android:paddingLeft="6px"
+                                android:paddingRight="6px"
+                                android:text="车主--"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="11px" />
+
+                            <TextView
+                                android:id="@+id/way_info_passenger_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="16px"
+                                android:layout_marginLeft="8px"
+                                android:background="@drawable/bg_circular_red2"
+                                android:gravity="center"
+                                android:paddingLeft="6px"
+                                android:paddingRight="6px"
+                                android:text="乘客--"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="11px" />
+
+                            <TextView
+                                android:id="@+id/way_info_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="16px"
+                                android:layout_marginLeft="8px"
+                                android:background="@drawable/bg_circular_yellow"
+                                android:gravity="center"
+                                android:paddingLeft="6px"
+                                android:paddingRight="6px"
+                                android:text="推荐价--"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="11px" />
+                            <TextView
+                                android:id="@+id/way_info_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="16px"
+                                android:layout_marginLeft="8px"
+                                android:background="@drawable/bg_circular_yellow"
+                                android:gravity="center"
+                                android:paddingLeft="6px"
+                                android:paddingRight="6px"
+                                android:text="路程--"
+                                android:textColor="#FFFFFFFF"
+                                android:textSize="11px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/way_info_describe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16px"
+                            android:layout_marginRight="20px"
+                            android:layout_marginTop="8px"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:textColor="#FF737373"
+                            android:textSize="13px" />
+
+                        <TextView
+                            android:id="@+id/way_info_manager_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18px"
+                            android:layout_marginLeft="16px"
+                            android:layout_marginTop="8px"
+                            android:singleLine="true"
+                            android:text="运营客服微信： ------"
+                            android:textColor="#FF737373"
+                            android:textSize="13px" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10px"
+                            android:layout_marginTop="35px"
+                            android:background="@color/gray_line" />
+
+                        <RelativeLayout
+                            android:id="@+id/way_info_group_member_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="82px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16px"
+                                android:layout_marginTop="16px"
+                                android:text="群成员"
+                                android:textColor="#FF484848"
+                                android:textSize="17px" />
+
+                            <TextView
+                                android:id="@+id/way_info_members_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16px"
+                                android:layout_marginTop="40px"
+                                android:text="共--人"
+                                android:textColor="#FFABB1BA"
+                                android:textSize="14px" />
+
+                            <FrameLayout
+                                android:id="@+id/way_info_head_view_1"
+                                android:layout_width="58px"
+                                android:layout_height="44px"
+                                android:layout_centerVertical="true"
+                                android:layout_toStartOf="@+id/way_info_head_view_2">
+
+                                <com.qcx.mini.widget.CircleImageView
+                                    android:id="@+id/way_info_head_img_1"
+                                    android:layout_width="44px"
+                                    android:layout_height="44px"
+                                    android:src="@mipmap/img_me" />
+
+                                <ImageView
+                                    android:layout_width="20px"
+                                    android:layout_height="20px"
+                                    android:layout_gravity="bottom"
+                                    android:src="@mipmap/icon_noone" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/way_info_head_view_2"
+                                android:layout_width="58px"
+                                android:layout_height="44px"
+                                android:layout_centerVertical="true"
+                                android:layout_toStartOf="@+id/way_info_head_view_3">
+
+                                <com.qcx.mini.widget.CircleImageView
+                                    android:id="@+id/way_info_head_img_2"
+                                    android:layout_width="44px"
+                                    android:layout_height="44px"
+                                    android:src="@mipmap/img_me" />
+
+                                <ImageView
+                                    android:layout_width="20px"
+                                    android:layout_height="20px"
+                                    android:layout_gravity="bottom"
+                                    android:src="@mipmap/icon_notwo" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/way_info_head_view_3"
+                                android:layout_width="54px"
+                                android:layout_height="44px"
+                                android:layout_centerVertical="true"
+                                android:layout_toStartOf="@+id/way_info_group_member_img">
+
+                                <com.qcx.mini.widget.CircleImageView
+                                    android:id="@+id/way_info_head_img_3"
+                                    android:layout_width="44px"
+                                    android:layout_height="44px"
+                                    android:src="@mipmap/img_me" />
+
+                                <ImageView
+                                    android:layout_width="20px"
+                                    android:layout_height="20px"
+                                    android:layout_gravity="bottom"
+                                    android:src="@mipmap/icon_nothree" />
+
+                            </FrameLayout>
+
+                            <ImageView
+                                android:id="@+id/way_info_group_member_img"
+                                android:layout_width="20px"
+                                android:layout_height="20px"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="16px"
+                                android:src="@mipmap/icon_return_left" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="114px"
+                            android:background="@color/gray_line" />
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_collapseMode="pin">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="172px"/>
+
+                    </android.support.v7.widget.Toolbar>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        app:layout_collapseMode="pin">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40px"
+                            android:layout_marginBottom="1px"
+                            android:layout_marginLeft="16px"
+                            android:layout_marginRight="16px"
+                            android:layout_marginTop="16px"
+                            android:background="@drawable/bg_circular_gray1">
+
+                            <TextView
+                                android:id="@+id/way_info_travel_type_0"
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1px"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_circular_white"
+                                android:gravity="center"
+                                android:text="车主行程"
+                                android:textColor="#FF484848"
+                                android:textSize="16px" />
+
+                            <TextView
+                                android:id="@+id/way_info_travel_type_1"
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1px"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="乘客行程"
+                                android:textColor="#FF484848"
+                                android:textSize="16px" />
+
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:id="@+id/way_info_wark_day_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44px"
+                            android:layout_marginTop="4px"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="4px"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/way_info_day0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20px"
+                                    android:layout_marginLeft="16px"
+                                    android:background="@drawable/bg_circular_blue"
+                                    android:gravity="center"
+                                    android:paddingLeft="11px"
+                                    android:paddingRight="11px"
+                                    android:text="今天"
+                                    android:textColor="#FFFFFFFF"
+                                    android:textSize="14px" />
+
+                                <TextView
+                                    android:id="@+id/way_info_day1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20px"
+                                    android:gravity="center"
+                                    android:paddingLeft="11px"
+                                    android:paddingRight="11px"
+                                    android:text="明天"
+                                    android:textColor="#FF484848"
+                                    android:textSize="14px" />
+
+                                <TextView
+                                    android:id="@+id/way_info_day2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20px"
+                                    android:gravity="center"
+                                    android:paddingLeft="11px"
+                                    android:paddingRight="11px"
+                                    android:text="后天"
+                                    android:textColor="#FF484848"
+                                    android:textSize="14px" />
+
+                                <TextView
+                                    android:id="@+id/way_info_day3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20px"
+                                    android:gravity="center"
+                                    android:paddingLeft="11px"
+                                    android:paddingRight="11px"
+                                    android:text="周四"
+                                    android:textColor="#FF484848"
+                                    android:textSize="14px" />
+
+                                <TextView
+                                    android:id="@+id/way_info_day4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20px"
+                                    android:gravity="center"
+                                    android:paddingLeft="11px"
+                                    android:paddingRight="11px"
+                                    android:text="周五"
+                                    android:textColor="#FF484848"
+                                    android:textSize="14px" />
+
+                                <TextView
+                                    android:id="@+id/way_info_day5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20px"
+                                    android:gravity="center"
+                                    android:paddingLeft="11px"
+                                    android:paddingRight="11px"
+                                    android:text="周六"
+                                    android:textColor="#FF484848"
+                                    android:textSize="14px" />
+
+                                <TextView
+                                    android:id="@+id/way_info_day6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20px"
+                                    android:gravity="center"
+                                    android:paddingLeft="11px"
+                                    android:paddingRight="11px"
+                                    android:text="周日"
+                                    android:textColor="#FF484848"
+                                    android:textSize="14px" />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <LinearLayout
+                            android:id="@+id/way_info_scenic_city_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="44px"
+                            android:layout_marginTop="4px"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/way_info_city_view"
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/way_info_city_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="北京"
+                                        android:textColor="#FF484848"
+                                        android:textSize="14px" />
+
+                                    <ImageView
+                                        android:layout_width="14px"
+                                        android:layout_height="14px"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@mipmap/btn_up" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/way_info_time_view"
+                                android:layout_width="0px"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/way_info_time_text"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="全部日期"
+                                        android:textColor="#FF484848"
+                                        android:textSize="14px" />
+
+                                    <ImageView
+                                        android:layout_width="14px"
+                                        android:layout_height="14px"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@mipmap/btn_up" />
+                                </LinearLayout>
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/way_info_travel_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_bg"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <com.qcx.mini.widget.BetterRecyclerView
+                    android:id="@+id/way_info_travel_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8px"
+                    android:background="@drawable/bg_white_with_shadow" />
+
+                <FrameLayout
+                    android:id="@+id/way_info_no_travel_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25px"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="200px"
+                        android:gravity="bottom"
+                        android:text="暂无行程"
+                        android:textColor="#ABB1BA"
+                        android:textSize="17px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="225px"
+                        android:text="去发布自己的行程吧"
+                        android:textColor="#ABB1BA"
+                        android:textSize="17px" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/way_info_titleBar2"
+            android:layout_width="match_parent"
+            android:layout_height="68px"
+            android:background="@color/white"/>
+
+        <FrameLayout
+            android:id="@+id/way_info_titleBar1"
+            android:layout_width="match_parent"
+            android:layout_height="68px">
+
+            <ImageView
+                android:id="@+id/way_info_back1"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="4px"
+                android:src="@mipmap/btn_nav_back" />
+
+            <ImageView
+                android:id="@+id/way_info_back2"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="4px"
+                android:src="@mipmap/btn_nav_back" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end">
+
+                    <ImageView
+                        android:id="@+id/way_info_share1"
+                        android:layout_width="48px"
+                        android:layout_height="48px"
+                        android:src="@mipmap/btn_nav_share" />
+
+                    <ImageView
+                        android:id="@+id/way_info_share2"
+                        android:layout_width="48px"
+                        android:layout_height="48px"
+                        android:src="@mipmap/btn_map_share" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4px">
+
+                    <ImageView
+                        android:id="@+id/way_info_more1"
+                        android:layout_width="48px"
+                        android:layout_height="48px"
+                        android:visibility="gone"
+                        android:src="@mipmap/btn_map_add" />
+
+                    <ImageView
+                        android:id="@+id/way_info_more2"
+                        android:layout_width="48px"
+                        android:layout_height="48px"
+                        android:visibility="gone"
+                        android:src="@mipmap/btn_nav_add" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/way_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxEms="8"
+                android:layout_marginTop="10px"
+                android:text=""
+                android:textColor="#FF000000"
+                android:textSize="17px"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_gravity="bottom"
+        android:background="#FF222222"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/way_info_join_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_join" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="加入此群"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16px" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/way_info_release_travel_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_join_copy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="发布行程"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16px" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

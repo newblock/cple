@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.qcx.mini.activity.WithdrawActivity">
+
+    <include layout="@layout/titlebar_1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="26px"
+        android:layout_marginTop="16px"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/withdraw_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前余额--元"
+            android:textColor="#FF484848"
+            android:textSize="17px" />
+
+        <TextView
+            android:id="@+id/withdraw_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8px"
+            android:text="全部提现"
+            android:textColor="#FF6095D3"
+            android:textSize="17px" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/withdraw_input_money"
+        android:layout_width="wrap_content"
+        android:layout_height="50px"
+        android:hint="请输入提现金额"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:minWidth="240px"
+        android:maxWidth="300px"
+        android:layout_gravity="center_horizontal"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:background="@null"
+        android:textSize="32px"
+        android:layout_marginTop="16px" />
+    <TextView
+        android:id="@+id/withdraw_money_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提现手续费0.6%"
+        android:textColor="#FFB9BDC3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12px"
+        android:textSize="13px"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@color/gray_line"
+        android:layout_marginTop="15px"/>
+    <LinearLayout
+        android:id="@+id/withdraw_account_view"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18px"
+            android:text="提现账号"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="#FF232426"
+            android:textSize="17px"
+            />
+        <ImageView
+            android:id="@+id/withdraw_account_img"
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_marginLeft="16px"/>
+        <TextView
+            android:id="@+id/withdraw_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4px"
+            android:layout_gravity="center_vertical"
+            android:textColor="#FF484848"
+            android:textSize="17px"
+            />
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:src="@mipmap/icon_return_left"
+            android:layout_marginRight="16px"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_height="1px"
+        android:background="#FFEDEDF0"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18px"
+        android:text="余额大于2元可提现,每天限一次最多500元"
+        android:textColor="#FFB9BDC3"
+        android:textSize="13px"
+        android:layout_marginTop="22px"
+        android:layout_gravity="center_horizontal"
+        />
+    
+    <TextView
+        android:id="@+id/withdraw_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_marginTop="8px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:gravity="center"
+        android:background="@drawable/bg_circular_gradient_blue"
+        android:text="确认"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16px"/>
+
+</LinearLayout>

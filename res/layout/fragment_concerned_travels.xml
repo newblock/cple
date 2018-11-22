@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_concerned_travels_coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/fragment_concerned_appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/fragment_concerned_collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_concerned_my_travel_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24px"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="20px" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_concerned_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49px"
+                android:gravity="center_vertical"
+                android:paddingLeft="15px"
+                android:text="关注"
+                android:textColor="#FF232426"
+                android:textSize="19px"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:background="@drawable/bg_border_gray4"
+                android:layout_marginLeft="13px"
+                android:layout_marginRight="13px"
+                android:layout_marginBottom="10px">
+                <TextView
+                    android:id="@+id/fragment_concerned_passenger_title"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_circular_gray_6"
+                    android:textSize="13px"
+                    android:text="乘客行程"
+                    />
+
+                <TextView
+                    android:id="@+id/fragment_concerned_driver_title"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FF939499"
+                    android:textSize="13px"
+                    android:text="车主行程"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_line"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_concerned_other_travel_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line"
+                android:overScrollMode="never"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_concerned_other_travel_noData2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="50px"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16px"
+                android:textColor="#ABB1BA"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="150px"
+                android:text="关注列表空空的"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16px"
+                android:textColor="#ABB1BA"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="170px"
+                android:text="快去[发现]页关注顺路的人吧"/>
+        </FrameLayout>
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_concerned_other_travel_noData1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="184px"
+            android:layout_height="69px"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30px"
+            android:src="@mipmap/img_pop_letsgo"/>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

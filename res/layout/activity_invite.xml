@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/yaoqing"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.InviteActivity">
+
+    <com.dexfun.layout.DexFrameLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height">
+
+        <ImageView
+            android:id="@+id/title_bar_left"
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_marginLeft="10px"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@mipmap/btn_nav_white" />
+
+        <TextView
+            android:id="@+id/title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/title_bar_right"
+            android:layout_width="32px"
+            android:layout_height="44px"
+            android:layout_gravity="end"
+            android:layout_marginRight="10px"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@mipmap/btn_nav_share_wht" />
+
+    </com.dexfun.layout.DexFrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10px"
+        android:text="趣出行"
+        android:textColor="#FFFFFFFF"
+        android:textSize="26px"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5px"
+        android:text="基于区块链技术连接每位拼车人"
+        android:textColor="#FFFFFFFF"
+        android:textSize="17px" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="449px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="15px"
+        android:background="@mipmap/yaoqingma">
+
+        <TextView
+            android:id="@+id/invite_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="65px"
+            android:text="BNYK329"
+            android:textColor="#FF3D73DC"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/invite_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="22px"
+            android:layout_gravity="end"
+            android:layout_marginRight="18px"
+            android:layout_marginTop="78px"
+            android:background="@drawable/bg_circular_gray_4"
+            android:gravity="center"
+            android:paddingLeft="9px"
+            android:paddingRight="9px"
+            android:text="复制"
+            android:textColor="#FF499EFF"
+            android:textSize="14px" />
+
+        <TextView
+            android:id="@+id/invite_type_url"
+            android:layout_width="100px"
+            android:layout_height="32px"
+            android:layout_marginLeft="32px"
+            android:layout_marginTop="122px"
+            android:background="@drawable/bg_circular_blue_7"
+            android:gravity="center"
+            android:text="链接邀请"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16px" />
+
+        <TextView
+            android:id="@+id/invite_type_text"
+            android:layout_width="100px"
+            android:layout_height="32px"
+            android:layout_gravity="end"
+            android:layout_marginRight="32px"
+            android:layout_marginTop="122px"
+            android:background="@drawable/bg_circular_blue_8"
+            android:gravity="center"
+            android:text="文字邀请"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16px" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="210px">
+
+            <ImageView
+                android:id="@+id/invite_qr_code"
+                android:layout_width="186px"
+                android:layout_height="186px" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="414px"
+            android:text="扫描二维码下载趣出行App"
+            android:textColor="#FF616266"
+            android:textSize="14px" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="14px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的邀请"
+                android:textColor="#FFFFFFFF"
+                android:textSize="17px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:layout_marginLeft="15px"
+                android:textColor="#FFFFFFFF"
+                android:textSize="26px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14px"
+                />
+            <ImageView
+                android:layout_width="14px"
+                android:layout_height="14px"
+                android:src="@mipmap/icon_return_left_white_mini"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

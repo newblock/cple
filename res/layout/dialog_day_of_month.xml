@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px">
+
+        <TextView
+            android:id="@+id/dialog_day_of_month_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16px"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#FFB9BDC3"
+            android:textSize="17px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="出发日期"
+            android:textColor="#FF737373"
+            android:textSize="17px" />
+
+
+        <TextView
+            android:id="@+id/dialog_day_of_month_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginRight="16px"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#FF6095D3"
+            android:textSize="17px" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_line"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.qcx.mini.widget.wheel.app.MonthWheelView
+            android:id="@+id/dialog_day_of_month_month"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30px"
+            android:layout_weight="1" />
+
+        <com.qcx.mini.widget.wheel.app.DayOfMonthWheelView
+            android:id="@+id/dialog_day_of_month_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30px"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

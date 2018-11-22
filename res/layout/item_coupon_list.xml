@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_cardview_circular_white"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="16px"
+            android:gravity="center"
+            android:text="乘车劵"
+            android:textColor="#FF484848"
+            android:textSize="17px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18px"
+            android:gravity="center"
+            android:text="有效期至2017.5.20"
+            android:layout_marginTop="39px"
+            android:layout_marginLeft="16px"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="14px"
+            android:layout_marginTop="70px"
+            android:layout_marginLeft="16px"
+            android:layout_marginBottom="16px"
+            android:gravity="center"
+            android:text="注:仅用于单笔订单支付"
+            android:textColor="#FF737373"
+            android:textSize="10px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22px"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="7px"
+            android:text="元"
+            android:layout_gravity="end|center_vertical"
+            android:textColor="#FF484848"
+            android:textSize="16px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="49px"
+            android:gravity="center"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="35px"
+            android:text="5"
+            android:textColor="#FF484848"
+            android:textSize="35px" />
+
+    <!--</RelativeLayout>-->
+
+</FrameLayout>

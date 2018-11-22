@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_circular_white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/item_personal_line_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8px"
+            android:paddingRight="8px"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:background="@drawable/bg_circular_gray_3"
+            android:textColor="@color/white"
+            android:layout_marginLeft="16px"
+            android:textSize="12px"
+            android:text="-- --"/>
+        <TextView
+            android:id="@+id/item_personal_line_info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="12px"
+            android:textColor="#FF484848"
+            android:layout_marginLeft="10px"
+            android:text="-- -- -- "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="12px"
+            android:textColor="#FFABB1BA"
+            android:text=" · "/>
+
+        <TextView
+            android:id="@+id/item_personal_line_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="12px"
+            android:textColor="#FF484848"
+            android:text="-- -- -- "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="12px"
+            android:textColor="#FFABB1BA"
+            android:text=" · "/>
+
+        <TextView
+            android:id="@+id/item_personal_line_info3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="12px"
+            android:textColor="#FF484848"
+            android:layout_weight="1"
+            android:text="-- -- -- "/>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10px">
+
+            <ImageView
+                android:id="@+id/item_personal_line_delete_img"
+                android:layout_width="14px"
+                android:layout_height="14px"
+                android:layout_marginRight="6px"
+                android:layout_marginLeft="6px"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_delete"/>
+        </FrameLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <RelativeLayout
+        android:id="@+id/item_personal_line_to_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="17px"
+            android:src="@mipmap/icon_map_star" />
+
+        <TextView
+            android:id="@+id/item_personal_line_startAddress"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_marginLeft="38px"
+            android:layout_marginRight="52px"
+            android:layout_marginTop="16px"
+            android:imeOptions="actionSearch"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:hint="-- --"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textColor="#FF484848"
+            android:textColorHint="#FF484848"
+            android:textSize="13px" />
+        <LinearLayout
+            android:id="@+id/item_personal_line_way_points_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="93px"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/item_personal_line_way_points_view_1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4px"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="16px"
+                    android:src="@mipmap/btn_dot"/>
+                <TextView
+                    android:id="@+id/item_personal_line_way_points_view_1_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="11px"
+                    android:textColor="#FF939499"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_personal_line_way_points_view_2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4px"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="16px"
+                    android:src="@mipmap/btn_dot"/>
+                <TextView
+                    android:id="@+id/item_personal_line_way_points_view_2_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11px"
+                    android:textColor="#FF939499"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_personal_line_way_points_view_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4px">
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="16px"
+                    android:src="@mipmap/btn_dot"/>
+                <TextView
+                    android:id="@+id/item_personal_line_way_points_view_3_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11px"
+                    android:textColor="#FF939499"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_personal_line_show_all_way_points"
+            android:layout_width="wrap_content"
+            android:layout_height="16px"
+            android:textColor="#FF499EFF"
+            android:gravity="center"
+            android:text="展开"
+            android:textSize="11px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/item_personal_line_way_points_view"
+            android:layout_marginRight="56px"/>
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="9px"
+            android:layout_below="@+id/item_personal_line_way_points_view"
+            android:src="@mipmap/icon_map_end" />
+
+        <TextView
+            android:id="@+id/item_personal_line_endAddress"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_marginLeft="38px"
+            android:layout_marginTop="8px"
+            android:layout_marginRight="52px"
+            android:layout_marginBottom="16px"
+            android:imeOptions="actionSearch"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:text="-- --"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textColor="#FF484848"
+            android:textColorHint="#FF484848"
+            android:layout_below="@+id/item_personal_line_way_points_view"
+            android:textSize="13px" />
+
+        <ImageView
+            android:id="@+id/search_exchange"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16px"
+            android:src="@mipmap/icon_return_left"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_set_line_page_weeks_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24px"
+            android:layout_marginTop="16px">
+            <TextView
+                android:id="@+id/item_personal_line_auto_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16px"
+                android:textStyle="bold"
+                android:textSize="14px"
+                android:textColor="#FF484848"
+                android:layout_weight="1"
+                android:text="自动发布"/>
+            <ImageView
+                android:id="@+id/item_personal_line_auto"
+                android:layout_width="33px"
+                android:layout_height="22px"
+                android:layout_marginRight="16px"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/item_personal_line_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未开启自动发布，该路线在发布页可快速发布 "
+            android:textSize="12px"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="4px"
+            android:layout_marginBottom="16px"/>
+    </LinearLayout>
+
+</LinearLayout>

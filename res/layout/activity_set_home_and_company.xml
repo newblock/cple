@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.qcx.mini.activity.SetHomeAndCompanyActivity">
+
+    <ImageView
+        android:id="@+id/set_address_back"
+        android:layout_width="32px"
+        android:layout_height="44px"
+        android:layout_marginLeft="10px"
+        android:src="@mipmap/btn_nav_back" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="36px"
+        android:layout_gravity="center"
+        android:text="亲爱的"
+        android:textColor="#FFB9BDC3"
+        android:textSize="25px" />
+
+    <TextView
+        android:layout_width="231px"
+        android:layout_height="48px"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="设置上下班信息,智能匹配行程,出行更方便哦!"
+        android:textColor="#FFB9BDC3"
+        android:textSize="17px" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170px"
+        android:src="@mipmap/img_hometocamp" />
+
+    <FrameLayout
+        android:id="@+id/set_home_address"
+        android:layout_width="280px"
+        android:layout_height="60px"
+        android:layout_gravity="center"
+        android:layout_marginTop="31px"
+        android:background="@drawable/bg_circular_white"
+        android:elevation="4dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/set_home_address_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="家庭地址"
+                android:layout_gravity="center"
+                android:textColor="#FF737373"
+                android:textSize="10px" />
+
+            <TextView
+                android:id="@+id/set_home_address_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="家庭地址"
+                android:textColor="#FF484848"
+                android:textSize="19px" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/set_company_address"
+        android:layout_width="280px"
+        android:layout_height="60px"
+        android:layout_gravity="center"
+        android:layout_marginTop="31px"
+        android:background="@drawable/bg_circular_white"
+        android:elevation="4dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/set_company_address_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司地址"
+                android:layout_gravity="center"
+                android:textColor="#FF737373"
+                android:textSize="10px" />
+
+            <TextView
+                android:id="@+id/set_company_address_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="公司地址"
+                android:textColor="#FF484848"
+                android:textSize="19px" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/set_address_next"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="34px"
+        android:src="@mipmap/btn_blue_confirm_off" />
+
+    <TextView
+        android:id="@+id/login_step"
+        android:layout_width="wrap_content"
+        android:layout_height="14px"
+        android:layout_below="@+id/login_next"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4px"
+        android:text="3 of 3"
+        android:textColor="#FFB9BDC3"
+        android:textSize="10px" />
+
+</LinearLayout>

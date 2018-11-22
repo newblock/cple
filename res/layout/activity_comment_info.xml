@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.qcx.mini.activity.CommentInfoActivity"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar_1"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/comment_info_refresh"
+        android:layout_width="match_parent"
+        android:layout_marginTop="44px"
+        android:layout_marginBottom="50px"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comment_info_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"/>
+            <TextView
+                android:id="@+id/comment_info_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16px"
+                android:textColor="#FFABB1BA"
+                android:text="空空如也"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="49px"
+        android:background="@color/gray_line"/>
+    <TextView
+        android:id="@+id/comment_info_text"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:hint="说点什么吧.."
+        android:textSize="16px"
+        android:layout_marginLeft="16px"
+        android:textColor="#ABB1BA"/>
+
+</FrameLayout>

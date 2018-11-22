@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:divider="@drawable/divider_gray_vertical"
+    android:showDividers="middle"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px">
+
+        <TextView
+            android:id="@+id/dialog_single_wheel_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16px"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#FFB9BDC3"
+            android:textSize="17px" />
+
+        <TextView
+            android:id="@+id/dialog_single_wheel_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="确认"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:layout_marginRight="16px"
+            android:textColor="#FF484848"
+            android:textSize="17px" />
+    </FrameLayout>
+
+    <com.qcx.mini.widget.wheel.WheelView
+        android:id="@+id/dialog_single_wheel_wheelPicker"
+        android:layout_width="match_parent"
+        android:layout_height="210px"/>
+
+</LinearLayout>

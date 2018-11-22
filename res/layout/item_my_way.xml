@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="22px">
+
+    <com.qcx.mini.widget.CircleImageView
+        android:id="@+id/item_my_way_icon"
+        android:layout_width="93px"
+        android:layout_height="93px"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="8px"
+        android:src="@mipmap/img_me" />
+
+    <TextView
+        android:id="@+id/item_my_way_num"
+        android:layout_width="wrap_content"
+        android:layout_height="18px"
+        android:layout_alignEnd="@+id/item_my_way_icon"
+        android:layout_alignTop="@+id/item_my_way_icon"
+        android:background="@drawable/bg_circular_red"
+        android:gravity="center_vertical"
+        android:paddingLeft="4px"
+        android:paddingRight="4px"
+        android:text="23"
+        android:textColor="#FFFFFFFF"
+        android:textSize="13px" />
+
+    <TextView
+        android:id="@+id/item_my_way_name"
+        android:layout_width="93px"
+        android:layout_height="32px"
+        android:layout_below="@+id/item_my_way_icon"
+        android:layout_marginLeft="16px"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:layout_marginTop="4px"
+        android:text="上地区-朝阳区"
+        android:textColor="#FF484848"
+        android:textSize="11px" />
+
+    <ImageView
+        android:id="@+id/item_my_way_add"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_below="@+id/item_my_way_name"
+        android:layout_marginLeft="46px"
+        android:src="@mipmap/btn_join_mini"
+        android:visibility="gone"/>
+
+</RelativeLayout>

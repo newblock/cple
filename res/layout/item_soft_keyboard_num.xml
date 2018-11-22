@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_soft_keyboard_num_text"
+        android:layout_width="match_parent"
+        android:layout_height="46px"
+        android:layout_margin="3px"
+        android:background="@drawable/bg_circular_white_click_selector"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="26px" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="46px">
+
+        <ImageView
+            android:id="@+id/item_soft_keyboard_num_delete"
+            android:layout_width="23px"
+            android:layout_height="18px"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/img_soft_keyboard_delete_selector"/>
+    </FrameLayout>
+
+</FrameLayout>

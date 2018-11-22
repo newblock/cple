@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="142px"
+        android:background="@mipmap/beijing_2">
+
+        <TextView
+            android:id="@+id/force_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:singleLine="true"
+            android:text="23243"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+
+        <ImageView
+            android:layout_width="24px"
+            android:layout_height="24px"
+            android:layout_alignBottom="@+id/force_num"
+            android:layout_marginBottom="6px"
+            android:layout_marginRight="6px"
+            android:layout_toStartOf="@+id/force_num"
+            android:background="@mipmap/icon_yuanli_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93px"
+            android:background="@drawable/bg_circular_blue_9"
+            android:paddingBottom="1px"
+            android:paddingLeft="10px"
+            android:paddingRight="10px"
+            android:paddingTop="1px"
+            android:text="原力越多,QC生长越快,分红也越多"
+            android:textColor="#FFFFFFFF"
+            android:textSize="12px" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="12px"
+        android:text="简介"
+        android:textColor="#FF232426"
+        android:textSize="16px" />
+
+    <LinearLayout
+        android:id="@+id/force_info_describe_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6px"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/force_describe"
+            android:singleLine="true"
+            android:textColor="#FF939499"
+            android:textSize="11px"
+            android:layout_weight="1"
+            android:layout_marginLeft="15px"
+            />
+        <TextView
+            android:id="@+id/force_info_describe_unfold"
+            android:layout_width="52px"
+            android:layout_height="wrap_content"
+            android:text="展开"
+            android:textColor="#FF4A90E2"
+            android:textSize="11px"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/force_info_describe_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/force_describe"
+            android:textColor="#FF939499"
+            android:textSize="11px"
+            android:layout_weight="1"
+            android:layout_marginLeft="15px"
+            />
+        <TextView
+            android:id="@+id/force_info_describe_close"
+            android:layout_width="52px"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:textColor="#FF4A90E2"
+            android:textSize="11px"
+            android:layout_gravity="end"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="明细"
+        android:layout_marginTop="12px"
+        android:layout_marginLeft="15px"
+        android:textColor="#FF232426"
+        android:textSize="16px"
+        />
+</LinearLayout>

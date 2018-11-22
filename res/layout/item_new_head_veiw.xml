@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="76px"
+        android:clickable="true"
+        android:background="@drawable/bg_item">
+
+        <ImageView
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15px"
+            android:src="@mipmap/icon_quchuxing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="78px"
+            android:text="动态"
+            android:textColor="#FF232426"
+            android:textSize="16px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="30px"
+            android:text="3条新动态"
+            android:textColor="#B3FFB74D"
+            android:textSize="14px" />
+
+        <ImageView
+            android:layout_width="14px"
+            android:layout_height="14px"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="15px"
+            android:src="@mipmap/icon_return_left_mini" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16px"
+            android:background="@color/gray_line" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="76px"
+        android:clickable="true"
+        android:background="@drawable/bg_item">
+
+        <ImageView
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15px"
+            android:src="@mipmap/icon_quchuxing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="78px"
+            android:text="动态"
+            android:textColor="#FF232426"
+            android:textSize="16px" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="30px"
+            android:text="3条新动态"
+            android:textColor="#B3FFB74D"
+            android:textSize="14px" />
+
+        <ImageView
+            android:layout_width="14px"
+            android:layout_height="14px"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="15px"
+            android:src="@mipmap/icon_return_left_mini" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16px"
+            android:background="@color/gray_line" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="76px"
+        android:clickable="true"
+        android:background="@drawable/bg_item">
+
+        <ImageView
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15px"
+            android:src="@mipmap/icon_quchuxing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="78px"
+            android:text="动态"
+            android:textColor="#FF232426"
+            android:textSize="16px" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="30px"
+            android:text="3条新动态"
+            android:textColor="#B3FFB74D"
+            android:textSize="14px" />
+
+        <ImageView
+            android:layout_width="14px"
+            android:layout_height="14px"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="15px"
+            android:src="@mipmap/icon_return_left_mini" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@color/gray_line" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="76px"
+        android:background="@drawable/bg_item"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15px"
+            android:src="@mipmap/icon_quchuxing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78px"
+            android:layout_marginTop="16px"
+            android:text="系统消息"
+            android:textColor="#FF232426"
+            android:textSize="16px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="78px"
+            android:layout_marginTop="40px"
+            android:text="你关注的车主发布新行程"
+            android:textColor="#FF939499"
+            android:textSize="14px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11-06 12:20"
+            android:textColor="#FF939499"
+            android:layout_marginTop="16px"
+            android:layout_marginRight="15px"
+            android:layout_gravity="end"
+            android:textSize="14px" />
+        <TextView
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:text="28"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="11px"
+            android:layout_marginTop="39px"
+            android:layout_marginRight="15px"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_circular_red_3"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>

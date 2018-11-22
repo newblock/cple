@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dexfun.layout.DexFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_circular_black_diaphaneity_60">
+    <TextView
+        android:id="@+id/toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17px"
+        android:layout_marginTop="37px"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:layout_marginBottom="37px"
+        android:textColor="@color/white"/>
+
+</com.dexfun.layout.DexFrameLayout>

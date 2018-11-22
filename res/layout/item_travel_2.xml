@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_travel_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_marginTop="18px"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="14px"
+                android:layout_height="14px"
+                android:layout_marginLeft="12px"
+                android:src="@mipmap/icon_time" />
+
+            <TextView
+                android:id="@+id/item_travel_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:layout_marginLeft="5px"
+                android:gravity="center_vertical"
+                android:text="--月--日--:--"
+                android:textColor="#FF232426"
+                android:textSize="14px" />
+            <TextView
+                android:id="@+id/item_travel_time_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12px"
+                android:text="上车时间"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="#FFF2A93B"
+                android:layout_marginLeft="8px"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_marginTop="9px"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="14px"
+                android:layout_height="14px"
+                android:layout_marginLeft="12px"
+                android:src="@mipmap/icon_start" />
+
+            <TextView
+                android:id="@+id/item_travel_startAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:layout_marginLeft="5px"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="起点"
+                android:textColor="#FF232426"
+                android:textSize="14px" />
+
+            <TextView
+                android:id="@+id/item_travel_start_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12px"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="#FF939499"
+                android:layout_marginLeft="8px"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_marginTop="9px"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="14px"
+                android:layout_height="14px"
+                android:layout_marginLeft="12px"
+                android:src="@mipmap/icon_end" />
+
+            <TextView
+                android:id="@+id/item_travel_endAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:layout_marginLeft="5px"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:text="终点"
+                android:textColor="#FF232426"
+                android:textSize="14px" />
+
+            <TextView
+                android:id="@+id/item_travel_end__right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12px"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="#FF939499"
+                android:layout_marginLeft="8px"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="31px"
+            android:layout_marginBottom="16px"
+            android:layout_marginTop="8px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_travel_peoples_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:text="人数"
+                android:visibility="gone"
+                android:textColor="#FF232426"
+                android:textSize="15px" />
+
+            <TextView
+                android:id="@+id/item_travel_peoples_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2px"
+                android:text="-"
+                android:visibility="gone"
+                android:textColor="#FF232426"
+                android:textSize="18px" />
+
+            <com.qcx.mini.widget.CircleImageView
+                android:id="@+id/item_travel_headImg1"
+                android:visibility="gone"
+                android:layout_width="25px"
+                android:layout_height="25px"
+                android:layout_marginLeft="15px"
+                android:src="@mipmap/img_me" />
+
+            <com.qcx.mini.widget.CircleImageView
+                android:id="@+id/item_travel_headImg2"
+                android:visibility="gone"
+                android:layout_width="25px"
+                android:layout_height="25px"
+                android:layout_marginLeft="5px"
+                android:src="@mipmap/img_me" />
+
+            <com.qcx.mini.widget.CircleImageView
+                android:id="@+id/item_travel_headImg3"
+                android:visibility="gone"
+                android:layout_width="25px"
+                android:layout_height="25px"
+                android:layout_marginLeft="5px"
+                android:src="@mipmap/img_me" />
+
+            <com.qcx.mini.widget.CircleImageView
+                android:id="@+id/item_travel_headImg4"
+                android:visibility="gone"
+                android:layout_width="25px"
+                android:layout_height="25px"
+                android:layout_marginLeft="5px"
+                android:src="@mipmap/img_me" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/item_travel_price"
+                android:layout_width="wrap_content"
+                android:layout_height="31px"
+                android:layout_gravity="bottom"
+                android:text="--.--"
+                android:textColor="#FF232426"
+                android:textSize="26px"/>
+
+            <TextView
+                android:id="@+id/item_travel_price_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="2px"
+                android:gravity="center"
+                android:text="元"
+                android:textColor="#FF232426"
+                android:layout_marginRight="16px"
+                android:layout_marginLeft="2px"
+                android:textSize="15px" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/item_travel_status"
+        android:layout_width="80px"
+        android:layout_height="44px"
+        android:layout_gravity="right|top"
+        android:src="@mipmap/img_complete"
+        android:visibility="gone" />
+
+</FrameLayout>

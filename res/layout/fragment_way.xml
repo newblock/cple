@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qcx.mini.widget.GestureLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_way_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_way_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="32px"
+            android:gravity="center_vertical"
+            android:text="发现"
+            android:textColor="#FF000000"
+            android:textSize="25px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_way_create_group"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="32px"
+            android:gravity="center_vertical"
+            android:text="创建群"
+            android:textColor="#FF484848"
+            android:textSize="16px"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/fragment_way_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/fragment_way_coordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/fragment_way_appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/fragment_concerned_collapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <android.support.v7.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        app:layout_collapseMode="pin">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40px"
+                                android:layout_marginBottom="1px"
+                                android:layout_marginLeft="16px"
+                                android:layout_marginRight="16px"
+                                android:layout_marginTop="1dp"
+                                android:background="@drawable/bg_circular_gray1">
+
+                                <LinearLayout
+                                    android:id="@+id/fragment_way_title0_view"
+                                    android:layout_width="0px"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="1px"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/fragment_way_title0"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="1px"
+                                        android:gravity="center"
+                                        android:text="车主行程"
+                                        android:textColor="#FF484848"
+                                        android:textSize="16px" />
+                                    <ImageView
+                                        android:layout_width="20px"
+                                        android:layout_height="20px"
+                                        android:src="@mipmap/btn_up"/>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/fragment_way_title1"
+                                    android:layout_width="0px"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="1px"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_circular_white"
+                                    android:gravity="center"
+                                    android:text="热门线路"
+                                    android:textColor="#FF484848"
+                                    android:textSize="16px" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_gravity="bottom"
+                                android:background="#F5F7FA" />
+                        </FrameLayout>
+
+                    </android.support.v7.widget.Toolbar>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/fragment_way_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="40px"
+                            android:layout_marginLeft="16px"
+                            android:layout_marginRight="16px"
+                            android:layout_marginTop="10px"
+                            android:background="@drawable/bg_circular_gray1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20px"
+                                android:layout_height="20px"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="7px"
+                                android:src="@mipmap/btn_home_seach" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="4px"
+                                android:hint="搜索"
+                                android:singleLine="true"
+                                android:textColorHint="#FF737373"
+                                android:textSize="16px" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="72px">
+
+                            <TextView
+                                android:id="@+id/fragment_way_groupType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16px"
+                                android:text="我的线路"
+                                android:textColor="#FF484848"
+                                android:textSize="17px"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/fragment_way_show_all_group"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginRight="16px"
+                                android:gravity="center"
+                                android:text="查看全部"
+                                android:textColor="#ABB1BA"
+                                android:textSize="14px" />
+                        </FrameLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/fragment_way_flock"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="41px"
+                            android:layout_marginTop="104px"
+                            android:overScrollMode="never"
+                            android:scrollbars="none" />
+                    </FrameLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+
+
+            <com.qcx.mini.widget.ScrollControlViewPager
+                android:id="@+id/fragment_way_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32px"
+                android:overScrollMode="never"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</com.qcx.mini.widget.GestureLinearLayout>

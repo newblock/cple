@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qcx.mini.activity.AddGroupMembersActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/titlebar_1"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/add_group_members_refreshLayout"
+        android:layout_marginTop="44px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="58px">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/add_group_members_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/add_group_noData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="50px"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16px"
+            android:textColor="#ABB1BA"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150px"
+            android:text="没有推荐群友"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_gradient_transparent">
+
+        <TextView
+            android:id="@+id/add_group_members_submit"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:text="添加"
+            android:textSize="16px"
+            android:layout_marginTop="12px"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/bg_circular_gradient_blue"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:layout_marginBottom="12px"
+            />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10px"
+    android:layout_marginRight="10px"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="281px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_circular_white"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/dialog_content_img"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16px"
+            android:src="@mipmap/icon_pop_confirm" />
+
+        <TextView
+            android:id="@+id/dialog_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="设置成功"
+            android:textColor="#FF484848"
+            android:textSize="17px" />
+
+        <TextView
+            android:id="@+id/dialog_content_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="20px"
+            android:text="本周行程已自动发布"
+            android:textColor="#FF484848"
+            android:textSize="14px" />
+        <TextView
+            android:id="@+id/dialog_content_message_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="8px"
+            android:text="每周日,自动发布下周行程"
+            android:textColor="#FF484848"
+            android:textSize="14px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="16px"
+            android:background="#FFEDEDF0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44px">
+
+            <TextView
+                android:id="@+id/dialog_content_cancel"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:visibility="gone"
+                android:textColor="#FF737373"
+                android:textSize="17px" />
+
+            <View
+                android:layout_width="1px"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:background="#FFEDEDF0" />
+
+            <TextView
+                android:id="@+id/dialog_content_sure"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="知道了"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

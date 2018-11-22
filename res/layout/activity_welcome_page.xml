@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qcx.mini.activity.WelcomePageActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/welcome_page_viewPager"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/welcome_page_in"
+        android:layout_width="180px"
+        android:layout_height="50px"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="45px"
+        android:textSize="22px"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/bg_gradient_button_blue"
+        android:text="进入" />
+
+</FrameLayout>

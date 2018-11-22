@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/item_travel_good_view"
+            android:layout_width="wrap_content"
+            android:layout_height="53px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_travel_good_img"
+                android:layout_width="20px"
+                android:layout_height="28px"
+                android:layout_marginRight="2px"
+                android:src="@mipmap/btn_good_mini" />
+
+            <TextView
+                android:id="@+id/item_travel_good_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="点赞"
+                android:textColor="#FFC8C9CC"
+                android:textSize="12px" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/item_travel_message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="53px"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="28px"
+                android:layout_marginRight="2px"
+                android:src="@mipmap/btn_msg_mini" />
+
+            <TextView
+                android:id="@+id/item_travel_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="#FFC8C9CC"
+                android:textSize="12px" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/item_travel_share_view"
+            android:layout_width="wrap_content"
+            android:layout_height="53px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="28px"
+                android:layout_marginRight="2px"
+                android:src="@mipmap/btn_share_mini" />
+
+            <TextView
+                android:id="@+id/item_travel_red_package"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="分享"
+                android:textColor="#FFFFAA1F"
+                android:textSize="12px" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/item_travel_reserve"
+        android:layout_width="80px"
+        android:layout_height="30px"
+        android:layout_marginRight="16px"
+        android:background="@drawable/bg_circular_gray_5"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="订座"
+        android:layout_gravity="center_vertical"
+        android:textColor="#FF4186E7"
+        android:textSize="14px" />
+
+</LinearLayout>

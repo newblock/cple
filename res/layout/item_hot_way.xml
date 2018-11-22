@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_hot_way_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.qcx.mini.widget.CircleImageView
+        android:id="@+id/item_hot_way_icon"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginBottom="16px"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="16px"
+        android:src="@mipmap/img_me" />
+
+    <TextView
+        android:id="@+id/item_hot_way_name"
+        android:layout_width="wrap_content"
+        android:layout_height="24px"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/item_hot_way_icon"
+        android:layout_marginLeft="8px"
+        android:layout_toEndOf="@+id/item_hot_way_icon"
+        android:text="上地区-朝阳区"
+        android:textColor="#FF484848"
+        android:textSize="17px" />
+
+    <LinearLayout
+        android:id="@+id/r_viewid_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignStart="@+id/item_hot_way_name"
+        android:layout_below="@+id/item_hot_way_name">
+
+        <TextView
+            android:id="@+id/item_hot_way_type"
+            android:layout_width="wrap_content"
+            android:layout_height="14px"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_circular_blue_1"
+            android:paddingLeft="4px"
+            android:paddingRight="4px"
+            android:text="跨城"
+            android:textColor="#FFFFFFFF"
+            android:textSize="10px" />
+        <TextView
+            android:id="@+id/item_hot_way_man_num"
+            android:layout_width="wrap_content"
+            android:layout_height="14px"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_circular_blue_2"
+            android:paddingLeft="4px"
+            android:paddingRight="4px"
+            android:layout_marginLeft="4px"
+            android:text="人数--"
+            android:textColor="#FFFFFFFF"
+            android:textSize="10px" />
+        <TextView
+            android:id="@+id/item_hot_way_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="14px"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_circular_yellow"
+            android:paddingLeft="4px"
+            android:paddingRight="4px"
+            android:layout_marginLeft="4px"
+            android:text="距离--"
+            android:visibility="gone"
+            android:textColor="#FFFFFFFF"
+            android:textSize="10px" />
+        <TextView
+            android:id="@+id/item_hot_way_price"
+            android:layout_width="wrap_content"
+            android:layout_height="14px"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_circular_yellow"
+            android:paddingLeft="4px"
+            android:paddingRight="4px"
+            android:visibility="gone"
+            android:layout_marginLeft="4px"
+            android:text="推荐价--"
+            android:textColor="#FFFFFFFF"
+            android:textSize="10px" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/item_hot_way_ifon"
+        android:layout_width="wrap_content"
+        android:layout_height="21px"
+        android:layout_alignStart="@+id/item_hot_way_name"
+        android:layout_below="@+id/r_viewid_11"
+        android:layout_marginRight="49px"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="朝阳 拼车 搭车 同城 迎风 上地地铁站 中关村地铁站 相互理解,互敬互爱."
+        android:textColor="#FF737373"
+        android:textSize="13px" />
+
+    <ImageView
+        android:id="@+id/item_hot_way_add"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16px"
+        android:src="@mipmap/btn_join_mini" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="92px"
+        android:background="#FFF2F2F5"
+        />
+
+</RelativeLayout>

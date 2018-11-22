@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qcx.mini">
+
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 允许程序访问相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".MainClass"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- android:largeHeap="true" -->
+        <meta-data
+            android:name="design_width"
+            android:value="375" />
+        <meta-data
+            android:name="design_height"
+            android:value="647" />
+
+        <!-- 高德地图配置开始 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@string/amap_key" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 高德地图配置结束 -->
+
+
+        <!-- ali配置开始 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- ali配置结束 -->
+
+
+        <!-- 微信配置开始 -->
+        <activity
+            android:name="com.quchuxing.qutaxi.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/TransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sdksample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.quchuxing.qutaxi.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sdksample" />
+            </intent-filter>
+        </activity>
+        <!-- 微信配置结束 -->
+
+
+        <!-- 融云聊天页面开始 -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.qcx.mini.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+        <activity
+            android:name=".activity.ConversationListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="${applicationId}"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="${applicationId}"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!-- 融云聊天页面结束 -->
+
+
+        <!-- app页面开始 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReleaseTravelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectRouteStrategyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.SetHomeAndCompanyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelDetail_NoPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SubmitOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelDetail_DriverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelDetail_PassengerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelDetail_Completed_DriverActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelDetail_Completed_PassengerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditTextActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZhiMaAuthActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CashAccountChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShareTravelAvtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WelcomePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QCXAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FollowerListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangeStartOrEndLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TravelNoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateVisible" />
+        <activity
+            android:name=".activity.WayInfoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GroupSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GroupMembersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CreateGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity
+            android:name=".activity.AddGroupMembersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommentInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyJoinGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShareGroupToPYQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.XxxxxxxxxxxxxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".test.TestActivity"/>
+        <activity
+            android:name=".activity.SetLineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PersonalLinesActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.UpLoadLocationService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.TravelHistoryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReleaseTravel_2Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity android:name=".activity.LineTravelActivity" />
+        <activity android:name=".activity.QCInfoActivity" />
+        <activity android:name=".activity.VerifyPhoneNumActivity" />
+        <activity android:name=".activity.SetPasswordActivity" />
+        <activity android:name=".activity.BalanceInfoActivity" />
+        <activity android:name=".activity.QCRankingActivity" />
+        <activity
+            android:name=".activity.AddBankAccountActivity"
+            android:windowSoftInputMode="adjustNothing|stateVisible" />
+        <activity
+            android:name=".activity.RealNameActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <data
+                    android:host="qcx"
+                    android:path="/taxi"
+                    android:port="9999"
+                    android:scheme="qcx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AuthenticationStep3Activity" />
+        <activity android:name=".activity.DriverInfoActivity" />
+        <activity android:name=".activity.TravelUnfinishedActivity" />
+        <activity android:name=".activity.BankAccountListActivity" />
+        <!-- app页面结束 -->
+        <activity android:name=".activity.RealNameInfoActivity" />
+        <activity android:name=".activity.InviteActivity" />
+        <activity android:name=".activity.ForceInfoActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qcx.mini.activity.ReleaseTravelActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/release_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="280px">
+
+    </com.amap.api.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/release_view_bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_circular_white_top"
+        android:clickable="true"
+        android:divider="@drawable/divider_gray_vertical"
+        android:dividerPadding="1px"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:showDividers="middle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/release_view_stratAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="24px"
+                    android:src="@mipmap/icon_map_star" />
+
+                <TextView
+                    android:id="@+id/release_text_stratAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="4px"
+                    android:hint="请输入您的起点"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+            </LinearLayout>
+            <View
+                android:id="@+id/release_view_way_point_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_line"/>
+
+            <LinearLayout
+                android:id="@+id/release_view_way_point_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:src="@mipmap/btn_dot"
+                    android:layout_marginLeft="24px"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/release_view_way_point_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:textSize="14px"
+                    android:singleLine="true"
+                    android:layout_marginLeft="4px"
+                    android:textColor="#FF616266"
+                    android:layout_weight="1"
+                    android:layout_marginRight="16px"
+                    />
+                <ImageView
+                    android:id="@+id/release_view_way_point_add"
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:src="@mipmap/btn_add"
+                    android:visibility="gone"
+                    android:layout_marginRight="8px"
+                    android:layout_marginLeft="17px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_view_endAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="24px"
+                    android:src="@mipmap/icon_map_end" />
+
+                <TextView
+                    android:id="@+id/release_text_endAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="4px"
+                    android:hint="请输入目的地"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_view_time"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/release_view_startTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_marginLeft="51px"
+                    android:src="@mipmap/btn_card_time" />
+
+                <TextView
+                    android:id="@+id/release_text_startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="4px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="出发时间"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_view_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_marginLeft="51px"
+                    android:src="@mipmap/btn_card_line" />
+
+                <TextView
+                    android:id="@+id/release_text_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="4px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="选择线路"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_view_cTime"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/release_view_cStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_marginLeft="51px"
+                    android:src="@mipmap/btn_card_time" />
+
+                <TextView
+                    android:id="@+id/release_text_cStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="出发时间"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_view_manNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_marginLeft="51px"
+                    android:src="@mipmap/btn_card_seat" />
+
+                <TextView
+                    android:id="@+id/release_text_manNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="4px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="乘车人数"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_view_driver"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/release_view_seatNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_marginLeft="51px"
+                    android:src="@mipmap/btn_card_seat" />
+
+                <TextView
+                    android:id="@+id/release_text_seatNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="4px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="座位数量"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/release_view_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:layout_marginLeft="51px"
+                    android:src="@mipmap/btn_card_money" />
+
+                <TextView
+                    android:id="@+id/release_text_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="4px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="票价"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/release_view_passenger"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/release_text_cprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="0.00"
+                    android:textColor="#FF484848"
+                    android:textSize="20px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1px"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="元"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/release_view_locate"
+        android:layout_width="44px"
+        android:layout_height="44px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="308px"
+        android:layout_marginLeft="8px"
+        android:src="@mipmap/btn_locate" />
+
+    <ImageView
+        android:id="@+id/release_submit"
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="12px"
+        android:src="@mipmap/icon_home_star_man" />
+
+    <ImageView
+        android:id="@+id/release_close"
+        android:layout_width="44px"
+        android:layout_height="44px"
+        android:layout_marginLeft="8px"
+        android:layout_marginTop="23px"
+        android:src="@mipmap/btn_close" />
+
+
+</FrameLayout>

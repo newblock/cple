@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="49px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="取消"
+            android:textColor="#FFABB1BA"
+            android:textSize="17px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="本人驾驶证正面图"
+            android:textColor="#FF232426"
+            android:textSize="17px" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+    <ImageView
+        android:id="@+id/dialog_add_car_card_img_img"
+        android:layout_width="match_parent"
+        android:layout_height="242px"
+        android:layout_marginLeft="8px"
+        android:layout_marginTop="8px"
+        android:layout_marginRight="8px"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1、请按照示例图上传"
+        android:layout_marginTop="16px"
+        android:layout_marginLeft="16px"
+        android:textColor="#FF616266"
+        android:textSize="14px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2、四角对齐，信息完整。确保文字清晰、无反光、无遮挡。"
+        android:textColor="#FF616266"
+        android:textSize="14px"
+        android:layout_marginTop="4px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        />
+    <TextView
+        android:id="@+id/dialog_add_car_card_img_camera"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:text="拍照上传"
+        android:textColor="#FF484848"
+        android:textSize="16px"
+        android:gravity="center"
+        android:layout_marginTop="16px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:background="@drawable/bg_border_gray1"
+        />
+    <TextView
+        android:id="@+id/dialog_add_car_card_img_choose"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:text="从相册选择"
+        android:textColor="#FF484848"
+        android:textSize="16px"
+        android:gravity="center"
+        android:layout_marginTop="8px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:background="@drawable/bg_border_gray1"
+        android:layout_marginBottom="16px"
+        />
+
+</LinearLayout>

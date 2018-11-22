@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.TravelDetail_Completed_PassengerActivity">
+
+    <include layout="@layout/titlebar_1" />
+
+    <TextView
+        android:id="@+id/travel_detail_completed_passenger_time"
+        android:layout_width="wrap_content"
+        android:layout_height="28px"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="16px"
+        android:gravity="center"
+        android:text="--月--日--:--"
+        android:textColor="#FF484848"
+        android:textSize="20px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px">
+
+        <ImageView
+            android:layout_width="14px"
+            android:layout_height="36px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14px"
+            android:src="@mipmap/icon_line" />
+
+        <TextView
+            android:id="@+id/travel_detail_completed_passenger_startAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="18px"
+            android:layout_marginLeft="28px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="起点：-- --"
+            android:textColor="#FF484848"
+            android:textSize="13px" />
+
+        <TextView
+            android:id="@+id/travel_detail_completed_passenger_endAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="18px"
+            android:layout_below="@+id/travel_detail_completed_passenger_startAddress"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="4px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="终点：-- --"
+            android:textColor="#FF484848"
+            android:textSize="13px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乘客人数"
+            android:textColor="#FF484848"
+            android:textSize="10px"
+            android:layout_marginLeft="16px"
+            android:layout_gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/travel_detail_completed_passenger_passengerNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF484848"
+            android:textSize="17px"
+            android:layout_gravity="bottom"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="14px"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="实付款:"
+            android:textColor="#FF484848"
+            android:textSize="10px" />
+
+        <TextView
+            android:id="@+id/travel_detail_completed_passenger_price"
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="15px"
+            android:gravity="center"
+            android:text="-- --"
+            android:textColor="#FF484848"
+            android:textSize="17px" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="16px"
+        android:background="#FFEDEDF0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18px"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="16px"
+        android:gravity="center"
+        android:text="车主"
+        android:textColor="#FF484848"
+        android:textSize="13px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8px">
+        <com.qcx.mini.widget.CircleImageView
+            android:id="@+id/travel_detail_completed_passenger_driverIcon"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_marginLeft="16px"
+            android:src="@mipmap/img_me"/>
+        <TextView
+            android:id="@+id/travel_detail_completed_passenger_driverName"
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:text="-- --"
+            android:layout_marginLeft="8px"
+            android:gravity="center"
+            android:textColor="#FF484848"
+            android:singleLine="true"
+            android:textSize="17px"
+            android:layout_toEndOf="@+id/travel_detail_completed_passenger_driverIcon"
+            android:layout_alignTop="@+id/travel_detail_completed_passenger_driverIcon"
+            android:layout_marginTop="7px"
+            />
+        <ImageView
+            android:id="@+id/page_passenger_travel_detail_driver_info_sex"
+            android:layout_width="14px"
+            android:layout_height="14px"
+            android:layout_marginTop="4px"
+            android:layout_toEndOf="@+id/travel_detail_completed_passenger_driverName"
+            android:layout_alignTop="@+id/travel_detail_completed_passenger_driverName"
+            android:src="@mipmap/img_men"
+            />
+        <TextView
+            android:id="@+id/travel_detail_completed_passenger_driverLastOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-- -----"
+            android:textColor="#FFB9BDC3"
+            android:textSize="10px"
+            android:layout_alignStart="@+id/travel_detail_completed_passenger_driverName"
+            android:layout_below="@+id/travel_detail_completed_passenger_driverName"
+            />
+        <TextView
+            android:id="@+id/travel_detail_completed_passenger_driverCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                    "
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="10px"
+            android:paddingLeft="4px"
+            android:paddingRight="4px"
+            android:privateImeOptions="4px"
+            android:layout_marginTop="5px"
+            android:layout_alignStart="@+id/travel_detail_completed_passenger_driverName"
+            android:layout_below="@+id/travel_detail_completed_passenger_driverLastOnline"
+            android:background="@drawable/bg_circular_blue"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/travel_detail_completed_passenger_help"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:text="客服"
+        android:gravity="center"
+        android:textColor="#FFFFFFFF"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/bg_circular_gradient_blue"
+        android:textSize="16px" />
+
+</LinearLayout>

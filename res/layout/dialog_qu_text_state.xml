@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/dialog_qu_text_state_title"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20px"
+        android:layout_gravity="center_horizontal"
+        android:text="还未实名认证"
+        android:textColor="#FF030303"
+        android:textSize="17px"
+        />
+    <TextView
+        android:id="@+id/dialog_qu_text_state_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15px"
+        android:layout_marginRight="15px"
+        android:padding="2px"
+        android:gravity="center"
+        android:text="你还未进行实名认证,认证后才可添加银 \n行卡进行余额提现,并且每次出行将获赠 \n30万意外险"
+        android:textColor="#FF030303"
+        android:textSize="13px"
+        android:layout_marginBottom="18px"
+        />
+    <View
+        android:id="@+id/dialog_qu_text_state_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line" />
+    <LinearLayout
+        android:id="@+id/dialog_qu_text_state_btn_view"
+        android:layout_width="match_parent"
+        android:layout_height="45px"
+        android:divider="@drawable/divider_gray_horizontal"
+        android:showDividers="middle">
+        <TextView
+            android:id="@+id/dialog_qu_text_state_leftBtn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="暂不认证"
+            android:gravity="center"
+            android:textColor="#FF007AFF"
+            android:textSize="17px"
+            />
+        <TextView
+            android:id="@+id/dialog_qu_text_state_rightBtn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="去认证"
+            android:gravity="center"
+            android:textColor="#FF007AFF"
+            android:textSize="17px"
+            />
+    </LinearLayout>
+</LinearLayout>

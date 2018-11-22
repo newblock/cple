@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.ShareTravelAvtivity">
+
+    <LinearLayout
+        android:id="@+id/share_travel_shareView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/share_travel_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="442px"
+            android:layout_marginLeft="7px"
+            android:layout_marginRight="7px"
+            android:layout_marginTop="16px"
+            android:background="@mipmap/img_chezhaorencard"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58px"
+                android:layout_marginTop="28px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:id="@+id/share_travel_icon"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_marginLeft="22px"
+                    android:src="@mipmap/img_me" />
+
+                <TextView
+                    android:id="@+id/share_travel_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22px"
+                    android:layout_marginLeft="8px"
+                    android:text="我是车主-- --,快来订座吧!"
+                    android:singleLine="true"
+                    android:textColor="#FF484848"
+                    android:textSize="16px" />
+
+            </LinearLayout>
+
+            <com.amap.api.maps.MapView
+                android:id="@+id/share_travel_mapView"
+                android:layout_width="match_parent"
+                android:layout_height="190px"
+                android:layout_marginLeft="22px"
+                android:layout_marginRight="22px"
+                android:layout_marginTop="86px" />
+
+
+            <ImageView
+                android:id="@+id/share_travel_mapimg"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_height="190px"
+                android:layout_marginLeft="22px"
+                android:layout_marginRight="22px"
+                android:layout_marginTop="86px" />
+
+            <TextView
+                android:id="@+id/share_travel_startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:layout_alignStart="@+id/share_travel_mapView"
+                android:layout_below="@+id/share_travel_mapView"
+                android:text="--月--日--:--"
+                android:textColor="#FF484848"
+                android:textSize="16px" />
+
+            <LinearLayout
+                android:id="@+id/share_travel_addressView"
+                android:layout_width="match_parent"
+                android:layout_height="22px"
+                android:layout_alignStart="@+id/share_travel_startTime"
+                android:layout_below="@+id/share_travel_startTime"
+                android:layout_marginTop="4px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/share_travel_startAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22px"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="-- -- --"
+                    android:textStyle="bold"
+                    android:maxEms="9"
+                    android:textColor="#FF484848"
+                    android:textSize="16px"/>
+
+                <ImageView
+                    android:layout_width="24px"
+                    android:layout_height="20px"
+                    android:src="@mipmap/icon_arrow_black" />
+
+                <TextView
+                    android:id="@+id/share_travel_endAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22px"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="-- -- --"
+                    android:textStyle="bold"
+                    android:maxEms="9"
+                    android:textColor="#FF484848"
+                    android:textSize="16px" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/r_viewid_7"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/share_travel_addressView"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="16px"
+                android:layout_marginTop="8px"
+                android:background="#FFEDEDF0" />
+
+            <LinearLayout
+                android:id="@+id/r_viewid_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r_viewid_7"
+                android:layout_marginTop="8px">
+
+                <TextView
+                    android:id="@+id/share_travel_seatsNum"
+                    android:layout_width="18px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22px"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textColor="#FF484848"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/share_travel_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22px"
+                    android:text="--.--"
+                    android:textColor="#FF484848"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_below="@+id/r_viewid_8">
+
+                <TextView
+                    android:id="@+id/share_travel_seatsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="22px"
+                    android:layout_weight="1"
+                    android:text="座"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+
+                <TextView
+                    android:id="@+id/share_travel_price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:layout_marginRight="22px"
+                    android:text="元/座"
+                    android:textColor="#FF484848"
+                    android:textSize="13px" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/share_travel_bottom_info"
+            android:layout_width="match_parent"
+            android:layout_height="66px"
+            android:layout_marginTop="12px"
+            android:layout_marginBottom="8px">
+
+            <ImageView
+                android:layout_width="95px"
+                android:layout_height="36px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16px"
+                android:src="@mipmap/logo_share_01" />
+
+            <ImageView
+                android:id="@+id/share_travel_miniPro"
+                android:layout_width="66px"
+                android:layout_height="66px"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="16px" />
+
+            <TextView
+                android:layout_width="130px"
+                android:layout_height="36px"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/share_travel_miniPro"
+                android:gravity="end"
+                android:layout_marginRight="4px"
+                android:text="长按小程序码
+进入趣出行小程序查看"
+                android:textColor="#FF737373"
+                android:textSize="13px" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/share_travel_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/bg_gradient_blue"
+        android:gravity="center"
+        android:text="分享到微信朋友圈"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16px" />
+
+    <TextView
+        android:id="@+id/share_travel_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#FF383838"
+        android:textSize="16px" />
+</LinearLayout>

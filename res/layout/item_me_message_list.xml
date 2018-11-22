@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="197px">
+
+    <com.qcx.mini.widget.CircleImageView
+        android:id="@+id/item_me_message_icon"
+        android:layout_width="44px"
+        android:layout_height="44px"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="16px"
+        android:src="@mipmap/img_me" />
+
+    <TextView
+        android:id="@+id/item_me_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="24px"
+        android:layout_alignTop="@+id/item_me_message_icon"
+        android:layout_marginLeft="8px"
+        android:layout_toEndOf="@+id/item_me_message_icon"
+        android:gravity="center"
+        android:text="吴亦凡"
+        android:textColor="#FF484848"
+        android:textSize="17px" />
+
+    <TextView
+        android:id="@+id/item_me_message_type"
+        android:layout_width="wrap_content"
+        android:layout_height="14px"
+        android:layout_alignStart="@+id/item_me_message_name"
+        android:layout_below="@+id/item_me_message_name"
+        android:gravity="center"
+        android:text="评论了:"
+        android:textColor="#FFB9BDC3"
+        android:textSize="10px" />
+
+    <ImageView
+        android:layout_width="14px"
+        android:layout_height="14px"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="31px"
+        android:visibility="gone"
+        android:src="@mipmap/icon_return_left_mini"/>
+
+    <TextView
+        android:id="@+id/item_me_message_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/item_me_message_name"
+        android:layout_below="@+id/item_me_message_type"
+        android:gravity="center"
+        android:textColor="#FF484848"
+        android:textSize="13px" />
+
+    <RelativeLayout
+        android:id="@+id/item_me_message_travel"
+        android:layout_width="291px"
+        android:layout_height="82px"
+        android:layout_marginTop="4px"
+        android:layout_alignStart="@+id/item_me_message_name"
+        android:layout_below="@+id/item_me_message_message"
+        android:background="@drawable/bg_circular_gray1">
+
+        <TextView
+            android:id="@+id/item_me_message_travel_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12px"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="人找车 11月12日22:30"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+        <TextView
+            android:id="@+id/item_me_message_travel_address"
+            android:layout_width="wrap_content"
+            android:layout_height="18px"
+            android:singleLine="true"
+            android:layout_alignStart="@+id/item_me_message_travel_time"
+            android:layout_below="@+id/item_me_message_travel_time"
+            android:layout_marginTop="4px"
+            android:text="金台路 到 中关村创业大厦"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+        <TextView
+            android:id="@+id/item_me_message_travel_seatNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/item_me_message_travel_time"
+            android:layout_below="@+id/item_me_message_travel_address"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:text="乘车人数:2"
+            android:textColor="#FF737373"
+            android:textSize="10px" />
+
+        <TextView
+            android:id="@+id/item_me_message_travel_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/item_me_message_travel_seatNum"
+            android:layout_marginRight="12px"
+            android:text="车费:10.00"
+            android:textColor="#FF737373"
+            android:textSize="10px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_me_message_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="14px"
+        android:layout_alignStart="@+id/item_me_message_name"
+        android:layout_below="@+id/item_me_message_travel"
+        android:layout_marginTop="4px"
+        android:gravity="center"
+        android:text="10:20"
+        android:textColor="#FFB9BDC3"
+        android:textSize="10px" />
+</RelativeLayout>

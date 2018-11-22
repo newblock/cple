@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/item_release_line_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            android:layout_marginBottom="16px"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/item_release_line_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4px"
+                    android:paddingRight="4px"
+                    android:maxEms="12"
+                    android:singleLine="true"
+                    android:background="@drawable/bg_circular_gray_3"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="16px"
+                    android:textSize="11px"
+                    android:text="-- --"/>
+                <TextView
+                    android:id="@+id/item_release_line_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20px"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="14px"
+                    android:textColor="#FF4A4A4A"
+                    android:layout_marginLeft="8px"
+                    android:text="-- -- -- "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="14px"
+                    android:textStyle="bold"
+                    android:textColor="#FFABB1BA"
+                    android:text=" · "/>
+
+                <TextView
+                    android:id="@+id/item_release_line_seat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20px"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="14px"
+                    android:textColor="#FF4A4A4A"
+                    android:text="-- -- -- "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="12px"
+                    android:textStyle="bold"
+                    android:textColor="#FFABB1BA"
+                    android:text=" · "/>
+
+                <TextView
+                    android:id="@+id/item_release_line_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20px"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="14px"
+                    android:textColor="#FF4A4A4A"
+                    android:text="-- -- -- "/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17px"
+                android:layout_marginTop="4px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_release_line_startAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12px"
+                    android:singleLine="true"
+                    android:textColor="#FF737373"
+                    android:layout_marginLeft="16px"
+                    android:text="-----------------------------"
+                    android:maxEms="9"/>
+                <ImageView
+                    android:layout_width="24px"
+                    android:layout_height="14px"
+                    android:src="@mipmap/icon_arrow_mini"/>
+                <TextView
+                    android:id="@+id/item_release_line_endAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12px"
+                    android:textColor="#FF737373"
+                    android:text="-----------------------------"
+                    android:singleLine="true"
+                    android:maxEms="9"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/item_release_line_release"
+            android:layout_width="60px"
+            android:layout_height="26px"
+            android:textSize="16px"
+            android:privateImeOptions="14px"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:text="发布"
+            android:background="@drawable/bg_circular_gray_4"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16px"
+            android:layout_marginLeft="16px"
+            android:textColor="#FF499EFF"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/item_release_line_auto"
+        android:layout_width="26px"
+        android:layout_height="26px"
+        android:src="@mipmap/icon_automate"
+        android:layout_gravity="right|top"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:background="@color/gray_line"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

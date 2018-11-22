@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.qcx.mini.widget.CircleImageView
+        android:id="@+id/item_news_icon"
+        android:layout_width="44px"
+        android:layout_height="44px"
+        android:layout_marginBottom="16px"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="16px"
+        android:src="@mipmap/img_me" />
+
+    <TextView
+        android:id="@+id/item_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="22px"
+        android:layout_alignTop="@+id/item_news_icon"
+        android:layout_marginLeft="8px"
+        android:layout_marginRight="100px"
+        android:layout_toEndOf="@+id/item_news_icon"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="今日10:20发车哦"
+        android:textSize="16px" />
+
+    <TextView
+        android:id="@+id/item_news_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="20px"
+        android:layout_alignStart="@+id/item_news_title"
+        android:layout_below="@+id/item_news_title"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="2px"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="今日10:20发车哦"
+        android:textColor="#FFABB1BA"
+        android:textSize="14px" />
+    <TextView
+        android:id="@+id/item_news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20px"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/item_news_icon"
+        android:layout_alignParentEnd="true"
+        android:textSize="14px"
+        android:layout_marginRight="16px"
+        android:text="11-06 12:20"/>
+
+    <ImageView
+        android:id="@+id/item_news_red_point"
+        android:layout_width="10px"
+        android:layout_height="10px"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="46px"
+        android:layout_marginRight="16px"
+        android:src="@mipmap/icon_new"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="75px"
+        android:background="@color/gray_line"/>
+
+
+</RelativeLayout>

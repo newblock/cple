@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/bg_circular_white_top">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px">
+
+            <TextView
+                android:id="@+id/dialog_pay_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="正在获取支付信息，请稍后"
+                android:textColor="#FF232426"
+                android:textSize="16px" />
+
+            <ImageView
+                android:id="@+id/dialog_pay_back"
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:src="@mipmap/icon_delete" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="@color/gray_line" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="票价"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+
+            <TextView
+                android:id="@+id/dialog_pay_ticket_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="16px"
+                android:text="--元/位"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="@color/gray_line"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"
+                android:text="座位数量"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+
+            <TextView
+                android:id="@+id/dialog_pay_passenger_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="16px"
+                android:text="--"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_gravity="bottom"
+                android:background="@color/gray_line"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="119px"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/dialog_pay_extra_money_view"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="49px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16px"
+                    android:text="接送费"
+                    android:textColor="#FF484848"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/dialog_pay_extra_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="16px"
+                    android:text="--元"
+                    android:textColor="#FF484848"
+                    android:textSize="17px" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_gravity="bottom"
+                    android:background="@color/gray_line"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_marginTop="17px"
+                android:layout_marginRight="16px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="16px"
+                    android:text="合计"
+                    android:textColor="#FF484848"
+                    android:textSize="17px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dialog_pay_price_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textStyle="bold"
+                    android:text="--"
+                    android:textColor="#FF232426"
+                    android:textSize="32px" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="元"
+                    android:textStyle="bold"
+                    android:textColor="#FF484848"
+                    android:textSize="17px" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/dialog_pay_zfb_check_view"
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_marginTop="15px"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="18px"
+                android:layout_height="18px"
+                android:layout_marginLeft="16px"
+                android:src="@mipmap/icon_zhifubao"/>
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="支付宝"
+                android:textColor="#FF484848"
+                android:textSize="14px"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4px"
+                android:singleLine="true"/>
+            <ImageView
+                android:id="@+id/dialog_pay_zfb_check_btn"
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginRight="16px"
+                android:src="@mipmap/icon_check"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_pay_wx_check_view"
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="18px"
+                android:layout_height="18px"
+                android:layout_marginLeft="16px"
+                android:src="@mipmap/icon_weixin"/>
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="微信"
+                android:textColor="#FF484848"
+                android:textSize="14px"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4px"
+                android:singleLine="true"/>
+            <ImageView
+                android:id="@+id/dialog_pay_wx_check_btn"
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_marginRight="16px"
+                android:src="@mipmap/icon_uncheck"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="16px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_fragment_cancel_order"
+                android:layout_width="120px"
+                android:layout_height="50px"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="16px"
+                android:background="@drawable/bg_border_gray5"
+                android:gravity="center"
+                android:text="取消订单"
+                android:textColor="#FF484848"
+                android:textSize="16px" />
+            <TextView
+                android:id="@+id/dialog_pay_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50px"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="15px"
+                android:layout_weight="1"
+                android:background="@drawable/bg_circular_gradient_blue"
+                android:gravity="center"
+                android:text="确认支付"
+                android:textStyle="bold"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16px" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

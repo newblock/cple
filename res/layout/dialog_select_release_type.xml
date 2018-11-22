@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_circular_white_top">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="59px"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="发布行程"
+        android:textStyle="bold"
+        android:textColor="#FF4A4A4A"
+        android:textSize="20px" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFEDEDF0"/>
+    <LinearLayout
+        android:id="@+id/release_type_min_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/item_release_line"
+            android:id="@+id/release_type_min_line_1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include layout="@layout/item_release_line"
+            android:id="@+id/release_type_min_line_2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include layout="@layout/item_release_line_bottom"
+            android:visibility="gone"
+            android:id="@+id/release_type_min_line_add"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/release_type_list"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            android:layout_height="250px"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFEDEDF0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/find_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="72px">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@mipmap/icon_home_findcar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4px"
+                android:gravity="center"
+                android:text="乘客发布"
+                android:textColor="#FF737373"
+                android:textSize="10px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2px"
+                android:gravity="center"
+                android:text="等待车主抢单和接送"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FF737373"
+                android:textSize="10px"
+                android:layout_marginBottom="28px"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/find_passenger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/find_car"
+            android:orientation="vertical"
+            android:layout_marginLeft="63px">
+
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/icon_home_findman"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4px"
+                android:gravity="center"
+                android:text="车主发布"
+                android:textColor="#FF737373"
+                android:textSize="10px" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2px"
+                android:gravity="center"
+                android:text="等待乘客订座,不接送乘客"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FF737373"
+                android:textSize="10px"
+                android:layout_marginBottom="28px"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

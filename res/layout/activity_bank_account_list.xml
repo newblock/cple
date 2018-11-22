@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.qcx.mini.activity.BankAccountListActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/titlebar_height">
+
+        <ImageView
+            android:id="@+id/bank_account_list_title_left"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:src="@mipmap/btn_nav_back"
+            android:layout_marginLeft="10px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FF000000"
+            android:text="选择银行卡"
+            android:textStyle="bold"
+            android:textSize="17px"/>
+        <TextView
+            android:id="@+id/bank_account_list_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            android:text="删除"
+            android:textColor="#FF616266"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginRight="16px"
+            android:textSize="14px"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8px"
+        android:layout_marginTop="44px"
+        android:background="@color/gray_line"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bank_account_list"
+        android:layout_marginTop="45px"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"/>
+    <TextView
+        android:id="@+id/bank_account_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="添加新账号"
+        android:textColor="#FF484848"
+        android:textSize="16px"
+        android:layout_margin="15px"
+        android:paddingTop="14px"
+        android:paddingBottom="14px"
+        android:background="@drawable/bg_circular_white_border_gray"
+        android:layout_gravity="bottom|center_horizontal" />
+
+
+</FrameLayout>

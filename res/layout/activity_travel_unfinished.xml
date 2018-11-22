@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.qcx.mini.activity.TravelUnfinishedActivity"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <include layout="@layout/titlebar_1"/>
+    </FrameLayout>
+    <com.qcx.mini.widget.PagerTitle
+        android:id="@+id/travel_unfinished_pager_title"
+        android:layout_width="match_parent"
+        android:layout_height="44px"
+        android:background="@color/white"
+        app:mPTLineDrawable="@drawable/pager_title_line"
+        app:mPTCurrentTextSize="16px"
+        app:mPTTextSize="14px"
+        app:mPTCurrentTextColor="#FF232426"
+        app:mPTNormalTextColor="#FF939499"
+        app:mPTLineSize="3px"
+        app:mPTLineWidth="30px"
+        app:mPTIsFull="true"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/travel_unfinished_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:background="@color/gray_bg"/>
+
+</LinearLayout>

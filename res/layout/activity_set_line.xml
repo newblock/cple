@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.qcx.mini.activity.SetLineActivity">
+
+    <include layout="@layout/titlebar_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_marginBottom="1px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="1px"
+        android:background="@drawable/bg_circular_gray1">
+
+        <TextView
+            android:id="@+id/set_line_page_title0"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_margin="1px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="人找车"
+            android:textStyle="bold"
+            android:background="@drawable/bg_circular_white"
+            android:textColor="#FF484848"
+            android:textSize="16px" />
+
+        <TextView
+            android:id="@+id/set_line_page_title1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_margin="1px"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="车找人"
+            android:textColor="#FF8E95A1"
+            android:textSize="16px" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/set_line_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:layout_marginBottom="4px"/>
+    <TextView
+        android:id="@+id/set_line_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_margin="16px"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16px"
+        android:text="确 认"
+        android:gravity="center"
+        android:background="@drawable/bg_circular_gray1"/>
+
+</LinearLayout>

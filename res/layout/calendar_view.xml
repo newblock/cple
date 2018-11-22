@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="18px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="18px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="18px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="二"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="18px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="三"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="18px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="四"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="18px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="五"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="18px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="六"
+            android:textColor="#FF737373"
+            android:textSize="13px" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="8px"
+        android:background="#FFEDEDF0" />
+
+    <TextView
+        android:id="@+id/calendar_view_month_text"
+        android:layout_width="wrap_content"
+        android:layout_height="24px"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="8px"
+        android:text="5月"
+        android:textColor="#FFB9BDC3"
+        android:textSize="17px" />
+
+    <GridView
+        android:id="@+id/calendar_view_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:gravity="center"
+        android:listSelector="@null"
+        android:numColumns="7" />
+
+</LinearLayout>

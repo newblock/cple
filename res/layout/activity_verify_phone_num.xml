@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.VerifyPhoneNumActivity">
+
+    <include layout="@layout/titlebar_1" />
+
+    <TextView
+        android:id="@+id/verify_phone_num_verify_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="20px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30px"
+        android:text="请输入手机号130****0472接收到的短信验证码"
+        android:textColor="#FF616266"
+        android:textSize="14px" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="30px">
+
+        <TextView
+            android:id="@+id/verify_phone_num_verify_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:hint="请输入短信验证码 "
+            android:textColor="#FF616266"
+            android:textSize="17px" />
+
+        <TextView
+            android:id="@+id/verify_phone_num_count_down_text"
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:layout_gravity="end"
+            android:text="获取验证码"
+            android:textColor="#FFC8C9CC"
+            android:textSize="17px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="@color/gray_line" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/verify_phone_num_submit"
+        android:layout_width="200px"
+        android:layout_height="44px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30px"
+        android:background="@drawable/bg_circular_gray1"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16px" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qcx.mini.widget.numSoftKeyboart.NumSoftKeyboard
+            android:id="@+id/verify_phone_num_num_soft_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#E6D2D5DB" />
+    </FrameLayout>
+
+</LinearLayout>

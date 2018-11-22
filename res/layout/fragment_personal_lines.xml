@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qcx.mini.widget.NoDataViw xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_personal_lines_no_data_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:NDDescribe="这里什么都没有"
+    app:NDImgResourceID="@mipmap/img_nothing">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_personal_line_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF2F2F5"
+        android:overScrollMode="never" />
+
+    <FrameLayout
+        android:id="@+id/fragment_personal_line_add_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:NDHideAble="false">
+
+        <FrameLayout
+            android:id="@+id/personal_line_add"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8px"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="8px"
+            android:background="@drawable/bg_circular_gradient_blue">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="14px"
+                    android:layout_height="14px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4px"
+                    android:text="添加常用路线"
+                    android:textColor="@color/white"
+                    android:textSize="16px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</com.qcx.mini.widget.NoDataViw>

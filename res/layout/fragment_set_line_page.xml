@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="16px"
+                    android:src="@mipmap/icon_map_star" />
+
+                <TextView
+                    android:id="@+id/fragment_set_line_page_startAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="49px"
+                    android:layout_marginLeft="4px"
+                    android:layout_marginRight="52px"
+                    android:imeOptions="actionSearch"
+                    android:textStyle="bold"
+                    android:background="@android:color/transparent"
+                    android:hint="请输入起点"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="#FF484848"
+                    android:textColorHint="#FF484848"
+                    android:textSize="13px" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/fragment_set_line_page_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginRight="52px"
+                android:background="@color/gray_line" />
+            <LinearLayout
+                android:id="@+id/fragment_set_line_page_way_point_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:src="@mipmap/btn_dot"
+                    android:layout_marginLeft="16px"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/fragment_set_line_page_way_point_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="20px"
+                    android:textSize="14px"
+                    android:layout_marginLeft="4px"
+                    android:singleLine="true"
+                    android:textColor="#FF616266"
+                    android:layout_weight="1"
+                    />
+                <ImageView
+                    android:id="@+id/fragment_set_line_page_way_point_add"
+                    android:layout_width="20px"
+                    android:layout_height="20px"
+                    android:src="@mipmap/btn_add"
+                    android:layout_marginRight="8px"
+                    android:layout_marginLeft="17px"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:layout_marginLeft="16px"
+                    android:src="@mipmap/icon_map_end" />
+
+                <TextView
+                    android:id="@+id/fragment_set_line_page_endAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:layout_marginLeft="4px"
+                    android:layout_marginRight="52px"
+                    android:imeOptions="actionSearch"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/r_viewid_13"
+                    android:background="@android:color/transparent"
+                    android:hint="请输入目的地"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:textColor="#FF484848"
+                    android:textColorHint="#FF484848"
+                    android:textSize="13px" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_exchange"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_marginRight="16px"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/btn_exchange"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/fragment_set_line_page_start_time_view"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:src="@mipmap/btn_card_time"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"/>
+            <TextView
+                android:id="@+id/fragment_set_line_page_start_time_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="14px"
+                android:textColor="#FF484848"
+                android:textStyle="bold"
+                android:text="出发时间"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="46px"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_set_line_page_passenger_num_view"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:src="@mipmap/btn_card_seat"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"/>
+            <TextView
+                android:id="@+id/fragment_set_line_page_passenger_num_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="14px"
+                android:textColor="#FF484848"
+                android:textStyle="bold"
+                android:text="乘车人数"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="46px"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_set_line_page_passenger_rout_strategy_view"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:src="@mipmap/btn_card_line"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"/>
+            <TextView
+                android:id="@+id/fragment_set_line_page_passenger_rout_strategy_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="14px"
+                android:textColor="#FF484848"
+                android:textStyle="bold"
+                android:text="选择路线"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="46px"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/fragment_set_line_page_driver_view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_set_line_page_driver_view"
+        android:layout_width="match_parent"
+        android:layout_height="49px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/fragment_set_line_page_driver_seats_view"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:src="@mipmap/btn_card_seat_1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"/>
+            <TextView
+                android:id="@+id/fragment_set_line_page_driver_seats_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="14px"
+                android:textColor="#FF484848"
+                android:textStyle="bold"
+                android:text="座位数量"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="46px"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/fragment_set_line_page_driver_price_view"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:src="@mipmap/btn_card_money"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16px"/>
+            <TextView
+                android:id="@+id/fragment_set_line_page_driver_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="14px"
+                android:textColor="#FF484848"
+                android:textStyle="bold"
+                android:text="票价(元/位）"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="46px"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="49px">
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:src="@mipmap/btn_card_time"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"/>
+        <EditText
+            android:id="@+id/fragment_set_line_page_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:textSize="14px"
+            android:textColor="#FF484848"
+            android:textStyle="bold"
+            android:hint="给路线起个名字，例如：上班，非必填"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="46px"/>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6px"
+        android:background="@color/gray_line"/>
+    <LinearLayout
+        android:id="@+id/fragment_set_line_page_weeks_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24px"
+            android:layout_marginTop="16px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16px"
+                android:textStyle="bold"
+                android:textSize="17px"
+                android:textColor="#FF484848"
+                android:layout_weight="1"
+                android:text="自动发布"/>
+            <com.qcx.mini.widget.SwitchView
+                android:id="@+id/fragment_set_line_page_switchView"
+                android:layout_width="38px"
+                android:layout_height="24px"
+                android:layout_marginRight="16px"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/fragment_set_line_page_weeks_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="设置发布时间，开启自动发布行程，遇见更多惊喜！"
+            android:textSize="12px"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="4px"
+            android:layout_marginBottom="12px"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/fragment_set_line_page_passenger_price_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <TextView
+                android:id="@+id/fragment_set_line_page_passenger_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20px"
+                android:textColor="#FF4A4A4A"
+                android:textColorHint="#FF4A4A4A"
+                android:textStyle="bold"
+                android:hint="00.00"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14px"
+                android:textColor="#FF4A4A4A"
+                android:textStyle="bold"
+                android:text="元"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>

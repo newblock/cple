@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="42px"
+        android:layout_height="42px"
+        android:src="@mipmap/icon_map_daohang"/>
+    <com.qcx.mini.widget.CircleImageView
+        android:id="@+id/view_map_icon"
+        android:layout_gravity="center"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:src="@mipmap/img_me"/>
+
+</FrameLayout>

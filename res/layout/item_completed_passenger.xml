@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.qcx.mini.widget.CircleImageView
+        android:id="@+id/item_completed_passenger_icon"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_marginLeft="16px"
+        android:layout_marginTop="16px"
+        android:src="@mipmap/img_me" />
+
+    <TextView
+        android:id="@+id/item_completed_passenger_name"
+        android:layout_width="wrap_content"
+        android:layout_height="24px"
+        android:layout_marginLeft="8px"
+        android:layout_marginTop="17px"
+        android:layout_toEndOf="@+id/item_completed_passenger_icon"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="王晓明"
+        android:textColor="#FF484848"
+        android:textSize="17px" />
+
+    <TextView
+        android:id="@+id/item_completed_passenger_time"
+        android:layout_width="wrap_content"
+        android:layout_height="14px"
+        android:gravity="center"
+        android:text="12月11日12:00上车"
+        android:layout_alignStart="@+id/item_completed_passenger_name"
+        android:layout_below="@+id/item_completed_passenger_name"
+        android:textColor="#FFB9BDC3"
+        android:textSize="10px"
+        android:layout_marginBottom="17px"/>
+    <TextView
+        android:id="@+id/item_completed_passenger_num"
+        android:layout_width="wrap_content"
+        android:layout_height="14px"
+        android:text="2人乘车"
+        android:gravity="center"
+        android:textColor="#FF737373"
+        android:layout_toEndOf="@+id/item_completed_passenger_name"
+        android:layout_marginLeft="2px"
+        android:textSize="10px"
+        android:layout_marginTop="23px"
+        />
+
+    <TextView
+        android:id="@+id/item_completed_passenger_price"
+        android:layout_width="wrap_content"
+        android:layout_height="18px"
+        android:gravity="center"
+        android:text="实付款:12.00"
+        android:textColor="#FF737373"
+        android:textSize="13px"
+        android:layout_marginRight="16px"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16px"
+        />
+
+</RelativeLayout>

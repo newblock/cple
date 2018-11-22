@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_travel_3_img_status"
+        android:layout_width="24px"
+        android:layout_height="24px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="25px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="25px"
+        android:src="@mipmap/home_icon_doing" />
+
+    <TextView
+        android:id="@+id/item_travel_3_text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54px"
+        android:layout_marginTop="15px"
+        android:text="行程中,请系好安全带"
+        android:textColor="#FF232426"
+        android:textSize="14px" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39px"
+        android:layout_marginLeft="54px"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_travel_3_start_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红庙北里35号123456"
+            android:textColor="#FF616266"
+            android:textSize="14px"
+            android:singleLine="true"
+            android:maxWidth="101px"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:src="@mipmap/icon_arrow_black"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/item_travel_3_end_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红庙北里12345678"
+            android:textColor="#FF616266"
+            android:textSize="14px"
+            android:singleLine="true"
+            android:maxWidth="101px"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="14px"
+        android:layout_height="14px"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="15px"
+        android:src="@mipmap/icon_return_left_mini"/>
+
+</FrameLayout>

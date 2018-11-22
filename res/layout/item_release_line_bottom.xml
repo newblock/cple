@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/item_release_line_bottom_add"
+        android:layout_width="match_parent"
+        android:layout_height="56px"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:src="@mipmap/btn_add_new" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4px"
+                android:text="添加路线"
+                android:textColor="#FF616266"
+                android:textSize="14px" />
+        </LinearLayout>
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/item_release_line_bottom_manger"
+        android:layout_width="match_parent"
+        android:layout_height="56px"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="56px"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:src="@mipmap/btn_manage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4px"
+                android:text="管理路线"
+                android:textColor="#FF616266"
+                android:textSize="14px" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

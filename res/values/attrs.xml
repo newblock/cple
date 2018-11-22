@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="boolean"/>
+        <attr name="civ_fill_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="pickerview">
+        <attr name="pickerview_gravity">
+            <enum name="center" value="17"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="pickerview_textSize" format="dimension"/>
+        <attr name="pickerview_textColorOut" format="color"/>
+        <attr name="pickerview_textColorCenter" format="color"/>
+        <attr name="pickerview_dividerColor" format="color"/>
+        <attr name="pickerview_lineSpacingMultiplier" format="float"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleTextView">
+        <attr name="CircleTextView_circle_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="LetterListView">
+        <attr name="pressBackColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="checkedTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PageTitleView">
+        <attr name="mBorderColor" format="color" />
+        <attr name="mCurrentBackColor" format="color" />
+        <attr name="mNormalBackColor" format="color" />
+        <attr name="mCurrentTextColor" format="color" />
+        <attr name="mNormalTextColor" format="color" />
+
+        <attr name="mTextSize" format="dimension" />
+        <attr name="mRadius" format="dimension" />
+
+        <attr name="backPadding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="PagerTitle">
+        <attr name="mPTNormalTextColor" format="color" />
+        <attr name="mPTCurrentTextColor" format="color" />
+        <attr name="mPTLineColor" format="color" />
+        <attr name="mPTLineDrawable" format="reference" />
+
+        <attr name="mPTLineSize" format="dimension" />
+        <attr name="mPTTextSize" format="dimension" />
+        <attr name="mPTCurrentTextSize" format="dimension" />
+        <attr name="mPTPaddingLR" format="dimension" />
+        <attr name="mPTLineWidth" format="dimension" />
+        <attr name="mPTIsFull" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="DragView">
+
+        <attr name="bottomHideHeight" format="dimension" />
+        <attr name="topBottomHideHeight" format="dimension" />
+
+    </declare-styleable>
+    <declare-styleable name="WaveView">
+        <attr name="sameDirection" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="NoDataViw">
+        <attr name="NDDescribe" format="string"/>
+        <attr name="NDImgResourceID" format="reference"/>
+        <attr name="NDHideAble" format="boolean"/>
+    </declare-styleable>
+</resources>

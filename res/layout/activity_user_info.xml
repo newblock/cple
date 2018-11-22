@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userinfo_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.UserInfoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="290px"
+        android:background="@mipmap/beijng">
+
+        <include
+            layout="@layout/titlebar_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px" />
+
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="66px"
+            android:src="@mipmap/img_me" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="176px"
+            android:text="李磊磊"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20px" />
+
+        <TextView
+            android:layout_width="162px"
+            android:layout_height="20px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="209px"
+            android:text="男 · 90后 · 10分钟前在线"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="244px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_info_send_message"
+                android:layout_width="81px"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_circular_white_2"
+                android:gravity="center"
+                android:paddingBottom="2px"
+                android:paddingTop="2px"
+                android:text="发消息"
+                android:textColor="#FF4998FF"
+                android:textSize="17px" />
+
+            <TextView
+                android:id="@+id/user_info_attention"
+                android:layout_width="81px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/bg_circular_white_2"
+                android:gravity="center"
+                android:paddingBottom="2px"
+                android:paddingTop="2px"
+                android:text="关注"
+                android:textColor="#FFFF6669"
+                android:textSize="17px" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="出行次数"
+            android:textColor="#FF232426"
+            android:textSize="17px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15px"
+            android:text="12"
+            android:textColor="#FF232426"
+            android:textSize="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="次"
+            android:layout_marginTop="2px"
+            android:textColor="#FF00003F"
+            android:textSize="14px" />
+
+    </LinearLayout>
+</LinearLayout>

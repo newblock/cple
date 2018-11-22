@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qcx.mini.widget.TouchMoveLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/comment_comment"
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="150px"
+            android:background="@drawable/bg_circular_white_top"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/comment_commentView_close"
+                android:layout_width="20px"
+                android:layout_height="20px"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/btn_up" />
+
+            <TextView
+                android:id="@+id/comment_commentNum"
+                android:layout_width="wrap_content"
+                android:layout_height="18px"
+                android:layout_marginLeft="16px"
+                android:gravity="center_vertical"
+                android:text="评论999+"
+                android:textColor="#FF484848"
+                android:textSize="13px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="8px"
+                android:background="#FFEDEDF0" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comment_recy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50px"
+                android:overScrollMode="never"
+                android:stackFromBottom="true"
+                android:transcriptMode="alwaysScroll" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFEDEDF0" />
+        </LinearLayout>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/comment_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/comment_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11px"
+            android:layout_marginLeft="16px"
+            android:layout_marginRight="4px"
+            android:layout_marginTop="10px"
+            android:layout_weight="1"
+            android:background="@drawable/bg_border_gray2"
+            android:hint="添加评论"
+            android:minHeight="28px"
+            android:paddingBottom="4px"
+            android:paddingLeft="12px"
+            android:paddingTop="6px"
+            android:textColor="#FF737373"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:textSize="13px" />
+
+        <TextView
+            android:id="@+id/comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="28px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16px"
+            android:gravity="center_vertical"
+            android:text="发送" />
+    </LinearLayout>
+
+</com.qcx.mini.widget.TouchMoveLayout>

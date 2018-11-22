@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.qcx.mini.activity.PersonalLinesActivity">
+
+    <include layout="@layout/titlebar_1"/>
+    <com.qcx.mini.widget.PagerTitle
+        android:id="@+id/personal_line_pager_title"
+        android:layout_width="match_parent"
+        android:layout_height="46px"
+        app:mPTLineWidth="30px"
+        app:mPTLineSize="3px"
+        app:mPTLineColor="#FF4186E7"
+        app:mPTNormalTextColor="#FF939499"
+        app:mPTTextSize="14px"
+        app:mPTCurrentTextColor="#FF232426"
+        app:mPTCurrentTextSize="16px"
+        app:mPTLineDrawable="@drawable/pager_title_line"
+        app:mPTIsFull="true"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/personal_line_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+
+
+</LinearLayout>

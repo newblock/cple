@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_user_travels_view"
+        android:layout_width="match_parent"
+        android:layout_height="118px"
+        android:background="@drawable/bg_gradient_blue"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_user_travels_type"
+                android:layout_width="42px"
+                android:layout_height="14px"
+                android:layout_marginLeft="16px"
+                android:layout_marginTop="20px"
+                android:src="@mipmap/icon_findmen_mini"/>
+
+            <TextView
+                android:id="@+id/item_user_travels_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="22px"
+                android:layout_marginTop="16px"
+                android:layout_weight="1"
+                android:layout_marginLeft="4px"
+                android:text="11月12日22:30"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16px" />
+
+            <TextView
+                android:id="@+id/item_user_travels_dingzuo"
+                android:layout_width="50px"
+                android:layout_height="22px"
+                android:layout_marginRight="16px"
+                android:layout_marginTop="15px"
+                android:focusable="true"
+                android:clickable="true"
+                android:background="@drawable/bg_circular_blue"
+                android:gravity="center"
+                android:text="订座"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13px" />
+            <ImageView
+                android:id="@+id/item_user_travels_status"
+                android:layout_width="80px"
+                android:layout_height="44px"
+                android:visibility="gone"
+                android:src="@mipmap/img_complete"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:layout_marginTop="3px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_user_travels_startAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:layout_marginLeft="16px"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:maxEms="9"
+                android:singleLine="true"
+                android:text="金台路"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13px" />
+
+            <ImageView
+                android:layout_width="28px"
+                android:layout_height="18px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4px"
+                android:src="@mipmap/icon_arrow" />
+
+            <TextView
+                android:id="@+id/item_user_travels_endAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:maxEms="9"
+                android:layout_gravity="bottom"
+                android:singleLine="true"
+                android:text="金台路"
+                android:textColor="#FFFFFFFF"
+                android:textSize="13px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28px"
+            android:layout_marginTop="8px"
+            android:layout_marginBottom="16px"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/item_user_travels_peoples_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16px"
+                    android:text="乘客人数"
+                    android:layout_gravity="center_vertical|bottom"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="11px"
+                    />
+
+                <TextView
+                    android:id="@+id/item_user_travels_peoples_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4px"
+                    android:text="2"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16px"
+                    />
+            </LinearLayout>
+
+            <com.qcx.mini.widget.CircleImageView
+                android:id="@+id/item_user_travels_headImg1"
+                android:layout_width="28px"
+                android:layout_height="28px"
+                android:layout_marginLeft="16px"
+                android:src="@mipmap/img_me" />
+
+            <com.qcx.mini.widget.CircleImageView
+                android:id="@+id/item_user_travels_headImg2"
+                android:layout_width="28px"
+                android:layout_height="28px"
+                android:layout_marginLeft="4px"
+                android:src="@mipmap/img_me" />
+
+            <com.qcx.mini.widget.CircleImageView
+                android:id="@+id/item_user_travels_headImg3"
+                android:layout_width="28px"
+                android:layout_height="28px"
+                android:layout_marginLeft="4px"
+                android:src="@mipmap/img_me" />
+
+            <com.qcx.mini.widget.CircleImageView
+                android:id="@+id/item_user_travels_headImg4"
+                android:layout_width="28px"
+                android:layout_height="28px"
+                android:layout_marginLeft="4px"
+                android:src="@mipmap/img_me" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="14px"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="票价:"
+                android:textColor="#FFFFFFFF"
+                android:textSize="11px" />
+
+            <TextView
+                android:id="@+id/item_user_travels_price"
+                android:layout_width="wrap_content"
+                android:layout_height="24px"
+                android:text="12.00"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="16px"
+                android:textColor="#FFFFFFFF"
+                android:textSize="17px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px">
+
+        <TextView
+            android:id="@+id/item_recommend_travels_watchNum"
+            android:layout_width="wrap_content"
+            android:layout_height="14px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"
+            android:gravity="center_vertical"
+            android:text="120人浏览"
+            android:textStyle="bold"
+            android:textColor="#ABB1BA"
+            android:textSize="11px" />
+
+        <RelativeLayout
+            android:id="@+id/item_recommend_travels_share_view"
+            android:layout_width="51px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16px"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/item_recommend_travels_share_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="999+"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/r_viewid_9"
+                android:textColor="#FF484848"
+                android:textSize="11px" />
+
+            <ImageView
+                android:id="@+id/r_viewid_9"
+                android:layout_width="24px"
+                android:layout_height="32px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2px"
+                android:src="@mipmap/btn_share_mini" />
+
+            <TextView
+                android:id="@+id/item_recommend_travels_red_package"
+                android:layout_width="wrap_content"
+                android:layout_height="12px"
+                android:gravity="center"
+                android:text=""
+                android:textStyle="bold"
+                android:paddingLeft="3px"
+                android:paddingRight="3px"
+                android:background="@drawable/bg_circular_red"
+                android:layout_below="@+id/item_recommend_travels_share_text"
+                android:textColor="#FFFFFFFF"
+                android:textSize="7px" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/item_recommend_travels_message_view"
+            android:layout_width="51px"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/item_recommend_travels_share_view"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="12px">
+
+            <ImageView
+                android:layout_width="24px"
+                android:layout_height="32px"
+                android:layout_marginRight="2px"
+                android:src="@mipmap/btn_msg_mini" />
+
+            <TextView
+                android:id="@+id/item_recommend_travels_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="14px"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="999+"
+                android:textColor="#FF484848"
+                android:textSize="11px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_recommend_travels_good_view"
+            android:layout_width="51px"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/item_recommend_travels_message_view"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginRight="12px">
+
+            <ImageView
+                android:id="@+id/item_recommend_travels_good_img"
+                android:layout_width="24px"
+                android:layout_height="32px"
+                android:layout_marginRight="2px"
+                android:src="@mipmap/btn_good_mini" />
+            <TextView
+                android:id="@+id/item_recommend_travels_good_text"
+                android:layout_width="wrap_content"
+                android:layout_height="14px"
+                android:gravity="center"
+                android:text="999+"
+                android:textStyle="bold"
+                android:textColor="#FF484848"
+                android:textSize="11px" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

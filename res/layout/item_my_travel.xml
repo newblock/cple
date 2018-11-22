@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_circular_white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/item_my_travel_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_my_travel_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF232426"
+            android:textSize="16px"
+            android:singleLine="true"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="14px"
+            android:text="抢单成功,乘客未支付"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"
+            android:layout_marginTop="13px"/>
+    </LinearLayout>
+    <include layout="@layout/item_travel_top_view"
+        android:id="@+id/item_my_travel_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15px"/>
+    <include layout="@layout/item_travel_2"/>
+    <FrameLayout
+        android:id="@+id/item_my_travel_operate_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+        <include layout="@layout/item_travel_bottom_view_2"
+            android:id="@+id/item_travel_bottomView"/>
+    </FrameLayout>
+
+</LinearLayout>

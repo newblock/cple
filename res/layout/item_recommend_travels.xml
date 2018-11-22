@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <com.qcx.mini.widget.CircleImageView
+            android:id="@+id/item_recommend_travels_icon"
+            android:layout_width="44px"
+            android:layout_height="44px"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="16px"
+            android:src="@mipmap/img_me" />
+
+        <TextView
+            android:id="@+id/item_recommend_travels_name"
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:layout_marginLeft="8px"
+            android:layout_marginTop="19px"
+            android:singleLine="true"
+            android:layout_toEndOf="@+id/item_recommend_travels_icon"
+            android:gravity="center_vertical"
+            android:text="吴亦凡"
+            android:textStyle="bold"
+            android:textColor="#FF484848"
+            android:textSize="17px" />
+
+        <TextView
+            android:id="@+id/item_recommend_travels_info"
+            android:layout_width="wrap_content"
+            android:layout_height="14px"
+            android:layout_alignStart="@+id/item_recommend_travels_name"
+            android:layout_below="@+id/item_recommend_travels_name"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="奥迪 10分钟前"
+            android:textColor="#ABB1BA"
+            android:textSize="11px" />
+
+        <FrameLayout
+            android:layout_width="50px"
+            android:layout_height="22px"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="24px">
+            <!--<ImageView-->
+                <!--android:id="@+id/item_recommend_travels_top_right_type0"-->
+                <!--android:layout_width="50px"-->
+                <!--android:layout_height="22px"-->
+                <!--android:layout_gravity="center_vertical|end"-->
+                <!--android:visibility="gone"-->
+                <!--android:src="@mipmap/btn_followed" />-->
+            <ImageView
+                android:id="@+id/item_recommend_travels_top_right_type1"
+                android:layout_width="50px"
+                android:layout_height="22px"
+                android:src="@mipmap/btn_like" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/r_viewid_1"
+            android:layout_width="wrap_content"
+            android:layout_height="14px"
+            android:layout_alignStart="@+id/item_recommend_travels_icon"
+            android:layout_below="@+id/item_recommend_travels_icon"
+            android:layout_marginTop="16px"
+            android:gravity="center_vertical"
+            android:text="顺路行程"
+            android:textColor="#FF484848"
+            android:textStyle="bold"
+            android:textSize="11px" />
+
+        <!--<com.qcx.mini.widget.PageRecycleView-->
+            <!--android:id="@+id/item_recommend_travels_item_travels"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="170px"-->
+            <!--android:layout_marginTop="8px"-->
+            <!--android:layout_below="@+id/r_viewid_1"-->
+            <!--android:overScrollMode="never"-->
+            <!--android:scrollbars="none"/>-->
+
+        <com.qcx.mini.widget.MyViewPager
+            android:id="@+id/item_recommend_travels_item_travels"
+            android:layout_width="match_parent"
+            android:layout_height="170px"
+            android:layout_marginTop="8px"
+            android:layout_below="@+id/r_viewid_1"
+            android:overScrollMode="never"
+            android:scrollbars="none"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8px"
+            android:layout_below="@+id/item_recommend_travels_item_travels"
+            android:background="@color/gray_bg" />
+
+
+</RelativeLayout>

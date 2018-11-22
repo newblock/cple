@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_line"
+    tools:context="com.qcx.mini.activity.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/search_close"
+            android:layout_width="32px"
+            android:layout_height="44px"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="6px"
+            android:src="@mipmap/btn_nav_close" />
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:layout_marginLeft="58px"
+            android:layout_marginTop="16px"
+            android:src="@mipmap/icon_map_star" />
+
+        <EditText
+            android:id="@+id/search_start_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="49px"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="52px"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入起点"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="#FF484848"
+            android:textSize="13px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="52px"
+            android:layout_marginRight="52px"
+            android:layout_marginTop="49px"
+            android:background="@color/gray_line" />
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:layout_marginLeft="58px"
+            android:layout_marginTop="66px"
+            android:src="@mipmap/icon_map_end" />
+
+        <EditText
+            android:id="@+id/search_end_address_input"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_marginLeft="80px"
+            android:layout_marginRight="52px"
+            android:layout_marginTop="50px"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入目的地"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="#FF484848"
+            android:textSize="13px" />
+
+        <ImageView
+            android:id="@+id/search_exchange"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16px"
+            android:layout_marginTop="40px"
+            android:src="@mipmap/btn_exchange" />
+
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/search_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="64px">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/search_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never" />
+
+            <FrameLayout
+                android:id="@+id/search_no_travel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="153px"
+                    android:text="暂无匹配行程"
+                    android:textColor="#FFABB1BA"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="180px"
+                    android:text="去发布自己的行程吧"
+                    android:textColor="#FFABB1BA"
+                    android:textSize="17px" />
+
+                <TextView
+                    android:id="@+id/search_no_travel_release"
+                    android:layout_width="148px"
+                    android:layout_height="50px"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="255px"
+                    android:background="@drawable/bg_circular_gradient_blue"
+
+                    android:gravity="center"
+                    android:text="发布行程得原力"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="16px" />
+            </FrameLayout>
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/bg_white_with_shadow" />
+
+    <FrameLayout
+        android:id="@+id/search_release_view"
+        android:layout_width="match_parent"
+        android:layout_height="64px"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="顺路行程不合适？"
+            android:textColor="#FF616266"
+            android:textSize="14px"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="12px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去发布行程等车主抢单吧"
+            android:textColor="#FF616266"
+            android:textSize="14px"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="32px"/>
+
+        <TextView
+            android:id="@+id/search_travel_release"
+            android:layout_width="148px"
+            android:layout_height="50px"
+            android:layout_gravity="center_vertical|end"
+            android:background="@drawable/bg_circular_gradient_blue"
+            android:gravity="center"
+            android:layout_marginRight="15px"
+            android:text="发布行程得原力"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16px" />
+    </FrameLayout>
+
+</RelativeLayout>

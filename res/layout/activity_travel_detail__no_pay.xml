@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/travel_detail_no_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qcx.mini.activity.TravelDetail_NoPayActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/travel_detail_no_pay_mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/travel_detail_no_pay_mapView_back"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginLeft="8px"
+        android:layout_marginTop="20px"
+        android:src="@mipmap/btn_close" />
+
+    <FrameLayout
+        android:id="@+id/travel_detail_no_pay_change_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.qcx.mini.widget.DragView
+            android:id="@+id/travel_detail_no_pay_change_dragView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="8px"
+            android:layout_marginRight="8px"
+            android:layout_gravity="bottom"
+            android:layout_height="710px"
+            app:bottomHideHeight="202px">
+
+            <LinearLayout
+                android:id="@+id/travel_detail_no_pay_passenger_travel_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/travel_detail_no_pay_location"
+                    android:layout_width="48px"
+                    android:layout_height="48px"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@mipmap/btn_locate" />
+
+                <RelativeLayout
+                    android:id="@+id/travel_detail_no_pay_passenger_travel_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:layout_marginTop="6px"
+                    android:background="@drawable/bg_circular_white_top">
+
+                    <ImageView
+                        android:id="@+id/travel_detail_no_pay_passenger_travel_close_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="14px"
+                        android:src="@mipmap/btn_up" />
+
+                    <com.qcx.mini.widget.CircleImageView
+                        android:id="@+id/travel_detail_no_pay_icon"
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginTop="15px"
+                        android:src="@mipmap/img_me" />
+
+                    <TextView
+                        android:id="@+id/travel_detail_no_pay_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20px"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginTop="19px"
+                        android:layout_toEndOf="@+id/travel_detail_no_pay_icon"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="昵称"
+                        android:textColor="#FF232426"
+                        android:textSize="16px" />
+
+                    <ImageView
+                        android:id="@+id/travel_detail_no_pay_sex"
+                        android:layout_width="14px"
+                        android:layout_height="14px"
+                        android:layout_alignTop="@+id/travel_detail_no_pay_name"
+                        android:layout_marginTop="3px"
+                        android:layout_toEndOf="@+id/travel_detail_no_pay_name" />
+
+                    <TextView
+                        android:id="@+id/travel_detail_no_pay_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/travel_detail_no_pay_name"
+                        android:layout_below="@+id/travel_detail_no_pay_name"
+                        android:layout_marginTop="1px"
+                        android:singleLine="true"
+                        android:textColor="#FF939499"
+                        android:textSize="12px" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/travel_detail_no_pay_passenger_travel_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_line"/>
+                    <include
+                        layout="@layout/item_travel_2" />
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/gray_line"/>
+                <FrameLayout
+                    android:id="@+id/travel_detail_no_pay_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="49px"
+                    android:background="@drawable/bg_circular_white_bottom">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="16px"
+                            android:layout_height="16px"
+                            android:src="@mipmap/btn_menu_phone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20px"
+                            android:gravity="center"
+                            android:text="电话"
+                            android:textColor="#FF737373"
+                            android:textSize="14px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8px"
+                        android:background="@drawable/bg_circular_white"
+                        android:clickable="true"
+                        android:divider="@drawable/divider_gray_vertical"
+                        android:focusable="true"
+                        android:orientation="vertical"
+                        android:showDividers="middle">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="44px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15px"
+                                android:text="路线详情"
+                                android:textColor="#FF484848"
+                                android:textSize="14px"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5px"
+                                android:text="输入你的行驶路线,查看匹配度"
+                                android:textColor="#FFC8C9CC"
+                                android:textSize="12px" />
+                        </LinearLayout>
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:background="#FFFAFAFC"
+                            android:layout_height="200px">
+
+                            <LinearLayout
+                                android:id="@+id/travel_detail_no_pay_start_p"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="37px"
+                                android:layout_height="40px">
+                                <TextView
+                                    android:layout_width="52px"
+                                    android:layout_height="wrap_content"
+                                    android:text="你的起点"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#FF232426"
+                                    android:textSize="11px"
+                                    />
+                                <TextView
+                                    android:id="@+id/travel_detail_no_pay_start_text_p"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:singleLine="true"
+                                    android:hint="正在获取当前位置"
+                                    android:textColor="#FF232426"
+                                    android:textSize="14px" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="修改"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FF939499"
+                                    android:layout_marginLeft="18px"
+                                    android:textSize="11px"
+                                    />
+                                <ImageView
+                                    android:layout_width="14px"
+                                    android:layout_height="14px"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="18px"
+                                    android:src="@mipmap/icon_return_left_mini" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/gray_line"
+                                android:layout_marginTop="39px"/>
+
+                            <TextView
+                                android:id="@+id/travel_detail_no_pay_start_distance_text_p"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30px"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="40px"
+                                android:layout_marginLeft="89px"
+                                android:singleLine="true"
+                                android:text="距离上车点--米"
+                                android:textColor="#FF939499"
+                                android:textSize="11px" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30px"
+                                android:layout_marginTop="70px"
+                                android:layout_marginLeft="37px"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="52px"
+                                    android:layout_height="wrap_content"
+                                    android:text="乘客起点"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#FF232426"
+                                    android:textSize="11px"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/travel_detail_no_pay_up_text_p"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="上车点"
+                                    android:textColor="#FF232426"
+                                    android:textSize="14px" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30px"
+                                android:layout_marginTop="100px"
+                                android:layout_marginLeft="37px"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="52px"
+                                    android:layout_height="wrap_content"
+                                    android:text="乘客终点"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#FF232426"
+                                    android:textSize="11px"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/travel_detail_no_pay_down_text_p"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="下车点"
+                                    android:textColor="#FF232426"
+                                    android:textSize="14px" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/travel_detail_no_pay_end_distance_text_p"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30px"
+                                android:layout_marginTop="130px"
+                                android:gravity="center_vertical"
+                                android:layout_marginLeft="89px"
+                                android:singleLine="true"
+                                android:text="距离目的地--米"
+                                android:textColor="#FF939499"
+                                android:textSize="11px" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_gravity="bottom"
+                                android:background="@color/gray_line"
+                                android:layout_marginBottom="39px"/>
+                            <LinearLayout
+                                android:id="@+id/travel_detail_no_pay_end_p"
+                                android:layout_width="match_parent"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="37px"
+                                android:layout_height="40px">
+
+
+                                <TextView
+                                    android:layout_width="52px"
+                                    android:layout_height="wrap_content"
+                                    android:text="你的终点"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="#FF232426"
+                                    android:textSize="11px"
+                                    />
+                                <TextView
+                                    android:id="@+id/travel_detail_no_pay_end_text_p"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:singleLine="true"
+                                    android:gravity="center_vertical"
+                                    android:hint="请输入目的地"
+                                    android:textColor="#FF232426"
+                                    android:textSize="14px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="修改"
+                                    android:layout_gravity="center"
+                                    android:textColor="#FF939499"
+                                    android:layout_marginLeft="18px"
+                                    android:textSize="11px"
+                                    />
+                                <ImageView
+                                    android:layout_width="14px"
+                                    android:layout_height="14px"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="18px"
+                                    android:src="@mipmap/icon_return_left_mini" />
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="37px"
+                                android:layout_height="200px"
+                                android:src="@mipmap/icon_chezhu_nav"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/travel_detail_no_pay_p_navigation"
+                            android:layout_width="match_parent"
+                            android:layout_height="49px">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16px"
+                                    android:layout_height="16px"
+                                    android:src="@mipmap/btn_menu_navig" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="导航"
+                                    android:textColor="#FF616266"
+                                    android:textSize="14px"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </com.qcx.mini.widget.DragView>
+
+        <LinearLayout
+            android:id="@+id/travel_detail_no_pay_passenger_status_no_seckill_view"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:id="@+id/travel_detail_no_pay_end_extra_distance_view"
+                android:layout_width="236px"
+                android:background="#FF2F3033"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/travel_detail_no_pay_end_extra_distance_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="8px"
+                    android:text="需绕行3.7公里,多花费6分钟"
+                    android:textColor="#FFC8C9CC"
+                    android:textSize="14px" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="16px"
+                    android:text="实时路况计算"
+                    android:textColor="#FF939499"
+                    android:layout_marginLeft="15px"
+                    android:textSize="11px"
+                    />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/travel_detail_no_pay_dingzuo_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="#FF232426">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="20px"
+                        android:layout_height="20px"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/icon_confirm" />
+
+                    <TextView
+                        android:id="@+id/travel_detail_no_pay_dingzuo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:text="抢单"
+                        android:textColor="@color/white"
+                        android:textSize="16px"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/travel_detail_no_pay_passenger_status_seckill_view"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:text="乘客已被抢单"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16px"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="#FFE3E3E6"/>
+    </FrameLayout>
+
+    <com.qcx.mini.widget.DragView
+        android:id="@+id/travel_detail_no_pay_driver_travel_dragView"
+        android:layout_width="match_parent"
+        android:layout_height="700px"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="8px"
+        android:layout_marginRight="8px"
+        android:visibility="visible"
+        app:topBottomHideHeight="0px">
+
+        <LinearLayout
+            android:id="@+id/travel_detail_no_pay_driver_travel_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/travel_detail_no_pay_driver_travel_location"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@mipmap/btn_locate" />
+
+            <FrameLayout
+                android:id="@+id/travel_detail_no_pay_driver_travel_view_1"
+                android:layout_width="match_parent"
+                android:layout_height="60px"
+                android:background="@drawable/bg_circular_white"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="14px"
+                    android:rotation="180"
+                    android:src="@mipmap/btn_up" />
+
+                <com.qcx.mini.widget.CircleImageView
+                    android:id="@+id/travel_detail_no_pay_driver_travel_icon"
+                    android:layout_width="30px"
+                    android:layout_height="30px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15px"
+                    android:src="@mipmap/img_me" />
+
+                <TextView
+                    android:id="@+id/travel_detail_no_pay_driver_travel_info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="55px"
+                    android:layout_marginRight="40px"
+                    android:singleLine="true"
+                    android:textColor="#FF232426"
+                    android:textSize="14px" />
+
+                <ImageView
+                    android:id="@+id/travel_detail_no_pay_driver_travel_call_1"
+                    android:layout_width="16px"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="19px"
+                    android:src="@mipmap/btn_menu_phone" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/travel_detail_no_pay_driver_travel_view_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_circular_white"
+                android:clickable="true"
+                android:divider="@drawable/divider_gray_vertical"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:showDividers="middle"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/travel_detail_no_pay_driver_travel_head_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="79px">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="15px"
+                        android:src="@mipmap/btn_up" />
+
+                    <com.qcx.mini.widget.CircleImageView
+                        android:id="@+id/travel_detail_no_pay_driver_travel_icon_bigger"
+                        android:layout_width="50px"
+                        android:layout_height="50px"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginTop="15px"
+                        android:src="@mipmap/img_me" />
+
+                    <TextView
+                        android:id="@+id/travel_detail_no_pay_driver_travel_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20px"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginTop="19px"
+                        android:layout_toEndOf="@+id/travel_detail_no_pay_driver_travel_icon_bigger"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="昵称"
+                        android:textColor="#FF232426"
+                        android:textSize="16px" />
+
+                    <ImageView
+                        android:id="@+id/travel_detail_no_pay_driver_travel_sex"
+                        android:layout_width="14px"
+                        android:layout_height="14px"
+                        android:layout_alignTop="@+id/travel_detail_no_pay_driver_travel_name"
+                        android:layout_marginTop="3px"
+                        android:layout_toEndOf="@+id/travel_detail_no_pay_driver_travel_name" />
+
+                    <TextView
+                        android:id="@+id/travel_detail_no_pay_driver_travel_info2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/travel_detail_no_pay_driver_travel_name"
+                        android:layout_below="@+id/travel_detail_no_pay_driver_travel_name"
+                        android:layout_marginTop="1px"
+                        android:singleLine="true"
+                        android:textColor="#FF939499"
+                        android:textSize="12px" />
+
+                </RelativeLayout>
+
+                <include
+                    android:id="@+id/travel_detail_no_pay_driver_travel_travel"
+                    layout="@layout/item_travel_2" />
+
+                <FrameLayout
+                    android:id="@+id/travel_detail_no_pay_driver_travel_call_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="49px">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="16px"
+                            android:layout_height="16px"
+                            android:src="@mipmap/btn_menu_phone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20px"
+                            android:gravity="center"
+                            android:text="电话"
+                            android:textColor="#FF737373"
+                            android:textSize="14px"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:id="@+id/travel_detail_no_pay_driver_travel_type_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8px"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/bg_circular_white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/travel_detail_no_pay_driver_travel_type_1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="站点乘车"
+                            android:textColor="#FF232426"
+                            android:textSize="16px" />
+
+                        <TextView
+                            android:id="@+id/travel_detail_no_pay_driver_travel_type_2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="车接车送"
+                            android:textColor="#FF939499"
+                            android:textSize="16px" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="3px"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_gravity="bottom"
+                                android:background="@color/gray_line" />
+
+                            <View
+                                android:id="@+id/travel_detail_no_pay_driver_travel_type_1_line"
+                                android:layout_width="30px"
+                                android:layout_height="3px"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_circular_blue_5" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_gravity="bottom"
+                                android:background="@color/gray_line" />
+
+                            <View
+                                android:id="@+id/travel_detail_no_pay_driver_travel_type_2_line"
+                                android:layout_width="30px"
+                                android:layout_height="3px"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_circular_blue_5"
+                                android:visibility="gone" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/travel_detail_no_pay_driver_travel_type_1_describe_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="37px"
+                        android:gravity="center"
+                        android:text="车主不接送,你需自行前往上车点乘车"
+                        android:textColor="#FF939499"
+                        android:textSize="12px" />
+
+                    <LinearLayout
+                        android:id="@+id/travel_detail_no_pay_driver_travel_my_startAddress_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="39px"
+                        android:background="#FFFAFAFC"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="14px"
+                            android:layout_height="14px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="14px"
+                            android:src="@mipmap/icon_start" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8px"
+                            android:text="你的起点"
+                            android:textColor="#FF616266"
+                            android:textSize="11px" />
+
+                        <TextView
+                            android:id="@+id/travel_detail_no_pay_driver_travel_my_startAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2px"
+                            android:layout_marginRight="6px"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text="红庙北里35号楼"
+                            android:textColor="#FF232426"
+                            android:textSize="14px" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="修改"
+                            android:layout_marginLeft="4px"
+                            android:layout_marginRight="4px"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="#FF939499"
+                            android:textSize="11px"
+                            />
+                        <ImageView
+                            android:layout_width="8px"
+                            android:layout_height="14px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15px"
+                            android:src="@mipmap/icon_return_left_mini" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/travel_detail_no_pay_driver_travel_type_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_line" />
+
+                    <LinearLayout
+                        android:id="@+id/travel_detail_no_pay_driver_travel_distance_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="122px"
+                        android:background="#FFFAFAFC"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="34px"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4px"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <View
+                                android:layout_width="6px"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:background="#FFDDE0E6" />
+
+                            <ImageView
+                                android:layout_width="34px"
+                                android:layout_height="20px"
+                                android:layout_marginTop="36px"
+                                android:src="@mipmap/icon_scd" />
+
+                            <ImageView
+                                android:layout_width="34px"
+                                android:layout_height="20px"
+                                android:layout_marginTop="66px"
+                                android:src="@mipmap/icon_xcd" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="40px"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/travel_detail_no_pay_driver_travel_recommend_start_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="22px"
+                                android:layout_marginTop="36px"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="09:00"
+                                android:textColor="#FF939499"
+                                android:textSize="14px" />
+
+                            <TextView
+                                android:id="@+id/travel_detail_no_pay_driver_travel_recommend_end_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="22px"
+                                android:layout_marginTop="66px"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="08:00"
+                                android:textColor="#FF939499"
+                                android:textSize="14px" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10px">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="11px"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/travel_detail_no_pay_driver_travel_up_distance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:paddingRight="36px"
+                                    android:singleLine="true"
+                                    android:text="距离上车点--米"
+                                    android:textColor="#FF939499"
+                                    android:textSize="11px" />
+
+                                <ImageView
+                                    android:layout_width="14px"
+                                    android:layout_height="14px"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:layout_marginRight="15px"
+                                    android:src="@mipmap/btn_buxing_navig" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="36px">
+
+                                <TextView
+                                    android:id="@+id/travel_detail_no_pay_driver_travel_up"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="22px"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:gravity="center_vertical"
+                                    android:paddingRight="36px"
+                                    android:singleLine="true"
+                                    android:text="上车点"
+                                    android:textColor="#FF232426"
+                                    android:textSize="14px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="修改"
+                                    android:layout_marginLeft="4px"
+                                    android:layout_marginRight="27px"
+                                    android:layout_gravity="center_vertical|end"
+                                    android:textColor="#FF939499"
+                                    android:textSize="11px"
+                                    />
+                                <ImageView
+                                    android:layout_width="8px"
+                                    android:layout_height="14px"
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_marginRight="15px"
+                                    android:src="@mipmap/icon_return_left_mini" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="66px">
+
+                                <TextView
+                                    android:id="@+id/travel_detail_no_pay_driver_travel_down"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="22px"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="下车点"
+                                    android:textColor="#FF232426"
+                                    android:textSize="14px" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="修改"
+                                    android:layout_marginLeft="4px"
+                                    android:layout_marginRight="27px"
+                                    android:layout_gravity="center_vertical|end"
+                                    android:textColor="#FF939499"
+                                    android:textSize="11px"
+                                    />
+                                <ImageView
+                                    android:layout_width="8px"
+                                    android:layout_height="14px"
+                                    android:layout_gravity="center_vertical|end"
+                                    android:layout_marginRight="15px"
+                                    android:src="@mipmap/icon_return_left_mini" />
+                            </FrameLayout>
+
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="97px"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/travel_detail_no_pay_driver_travel_end_distance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="距离目的地--米"
+                                    android:textColor="#FF939499"
+                                    android:textSize="11px" />
+
+                                <ImageView
+                                    android:layout_width="14px"
+                                    android:layout_height="14px"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:layout_marginRight="15px"
+                                    android:src="@mipmap/btn_buxing_navig" />
+                            </FrameLayout>
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_line" />
+
+                    <LinearLayout
+                        android:id="@+id/travel_detail_no_pay_driver_travel_my_endAddress_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="39px"
+                        android:background="#FFFAFAFC"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="14px"
+                            android:layout_height="14px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="14px"
+                            android:src="@mipmap/icon_end" />
+
+                        <TextView
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8px"
+                            android:text="你的终点"
+                            android:textColor="#FF616266"
+                            android:textSize="11px" />
+
+                        <TextView
+                            android:id="@+id/travel_detail_no_pay_driver_travel_my_endAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2px"
+                            android:layout_marginRight="6px"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="红庙北里35号楼"
+                            android:textColor="#FF232426"
+                            android:textSize="14px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="修改"
+                            android:layout_marginLeft="4px"
+                            android:layout_marginRight="4px"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="#FF939499"
+                            android:textSize="11px"
+                            />
+                        <ImageView
+                            android:layout_width="8px"
+                            android:layout_height="14px"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15px"
+                            android:src="@mipmap/icon_return_left_mini" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16px"
+                            android:layout_marginRight="155px"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/travel_detail_no_pay_driver_travel_ticket_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="--元/座"
+                                android:textColor="#FF232426"
+                                android:textSize="14px"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/travel_detail_no_pay_driver_travel_extra_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="车主绕行30公里"
+                                android:textColor="#FF616266"
+                                android:textSize="12px" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/travel_detail_no_pay_driver_travel_submit"
+                            android:layout_width="130px"
+                            android:layout_height="44px"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginLeft="16px"
+                            android:layout_marginRight="15px"
+                            android:background="@drawable/bg_circular_gradient_blue"
+                            android:gravity="center"
+                            android:text="坐TA的车"
+                            android:textColor="@color/white"
+                            android:textSize="16px"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true">
+                <LinearLayout
+                    android:id="@+id/travel_detail_no_pay_driver_travel_no_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:layout_marginBottom="8px"
+                    android:layout_marginTop="8px"
+                    android:background="@drawable/bg_circular_white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="14px"
+                        android:layout_height="14px"
+                        android:layout_marginLeft="15px"
+                        android:background="@mipmap/icon_end" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15px"
+                        android:layout_weight="1"
+                        android:text="请输入目的地去订座"
+                        android:textColor="#FF232426"
+                        android:textSize="16px" />
+
+                    <ImageView
+                        android:layout_width="30px"
+                        android:layout_height="30px"
+                        android:layout_marginRight="16px"
+                        android:src="@mipmap/btn_blue_next" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.qcx.mini.widget.DragView>
+</FrameLayout>

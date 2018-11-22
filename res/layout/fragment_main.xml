@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qcx.mini.widget.GestureFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_main_gesture_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/fragment_main_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF4364FF"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="pin">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="31px"
+                        android:text="趣出行"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="17px" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fragment_main_scale_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.9">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="64px"
+                        android:text="基于区块链技术连接每位拼车人"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="14px" />
+
+                    <TextView
+                        android:id="@+id/fragment_main_not_login_view"
+                        android:layout_width="92px"
+                        android:layout_height="32px"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="75px"
+                        android:layout_marginTop="99px"
+                        android:background="@drawable/bg_circular_white"
+                        android:gravity="center"
+                        android:text="赚钱秘籍"
+                        android:textColor="#FFFF9800"
+                        android:textSize="14px"
+                        android:visibility="visible" />
+
+                    <FrameLayout
+                        android:id="@+id/fragment_main_login_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50px"
+                        android:layout_marginTop="96px"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="今日原力"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="12px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="12px"
+                            android:text="460"
+                            android:textColor="#FFFFFFFF"
+                            android:textSize="50px"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="188px"
+                            android:layout_height="40px"
+                            android:layout_marginTop="75px">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16px"
+                                    android:layout_height="16px"
+                                    android:src="@mipmap/home_btn_info" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="规则介绍"
+                                    android:textColor="#FFFFFFFF"
+                                    android:textSize="14px" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="187px"
+                            android:layout_height="40px"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="75px">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16px"
+                                    android:layout_height="16px"
+                                    android:src="@mipmap/home_btn_exalt" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="去赚原力"
+                                    android:textColor="#FFFFFFFF"
+                                    android:textSize="14px" />
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+
+                    </FrameLayout>
+                </FrameLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/fragment_main_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    app:layout_collapseMode="pin">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.qcx.mini.widget.PagerTitle
+                            android:id="@+id/fragment_main_pager_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="44px"
+                            android:layout_marginTop="20px"
+                            android:background="@drawable/bg_circular_gray_top"
+                            app:mPTCurrentTextSize="16px"
+                            app:mPTIsFull="true"
+                            app:mPTLineDrawable="@drawable/pager_title_line"
+                            app:mPTTextSize="14px"
+                            app:mPTLineSize="3px"/>
+                    </FrameLayout>
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <com.qcx.mini.widget.ScrollControlViewPager
+            android:id="@+id/fragment_main_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_bg"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</com.qcx.mini.widget.GestureFrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_drive_main_nearby_seats"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+                <View
+                    android:id="@+id/item_travel_detail_heads_left_line"
+                    android:layout_width="16px"
+                    android:layout_height="2px"
+                    android:visibility="invisible"
+                    android:background="@color/gray_line"/>
+                <com.qcx.mini.widget.CircleImageView
+                    android:id="@+id/item_travel_detail_icon"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#00000000"
+                    android:src="@mipmap/img_me" />
+                <View
+                    android:id="@+id/item_travel_detail_heads_right_line"
+                    android:layout_width="16px"
+                    android:layout_height="2px"
+                    android:visibility="invisible"
+                    android:background="@color/gray_line"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/item_travel_detail_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF232426"
+            android:text="乘客一"
+            android:textSize="12px"
+            android:layout_marginTop="6px"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/item_travel_detail_status"
+            android:layout_width="wrap_content"
+            android:textColor="#FF232426"
+            android:layout_height="12px"
+            android:text="未知"
+            android:singleLine="true"
+            android:textSize="9px"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal" />
+</LinearLayout>

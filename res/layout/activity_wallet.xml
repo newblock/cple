@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.WalletActivity">
+    <include layout="@layout/titlebar_1"/>
+    <com.qcx.mini.widget.SideslipLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px">
+
+        <View
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_blue"
+            android:layout_marginLeft="16px"/>
+
+        <View
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_red"
+            android:layout_marginLeft="16px"/>
+        <View
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_blue"
+            android:layout_marginLeft="16px"/>
+
+        <View
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_red"
+            android:layout_marginLeft="16px"/>
+        <View
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_blue"
+            android:layout_marginLeft="16px"/>
+
+        <View
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_red"
+            android:layout_marginLeft="16px"/>
+    </com.qcx.mini.widget.SideslipLayout>
+    
+</LinearLayout>

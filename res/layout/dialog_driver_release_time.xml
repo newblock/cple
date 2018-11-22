@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="675px"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px">
+
+            <TextView
+                android:id="@+id/dialog_driver_release_time_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16px"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#FFB9BDC3"
+                android:textSize="17px" />
+
+            <TextView
+                android:id="@+id/dialog_driver_release_time_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginRight="16px"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFEDEDF0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18px"
+            android:layout_marginLeft="16px"
+            android:layout_marginTop="16px"
+            android:gravity="center"
+            android:text="选择日期(可多选)"
+            android:textColor="#FF484848"
+            android:textSize="13px" />
+
+        <com.qcx.mini.widget.calendar.CalendarView
+            android:id="@+id/dialog_driver_release_time_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.qcx.mini.widget.calendar.CalendarView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18px"
+            android:layout_marginTop="16px"
+            android:layout_marginLeft="16px"
+            android:gravity="center"
+            android:text="选择时间"
+            android:textColor="#FF484848"
+            android:textSize="13px"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+            <com.qcx.mini.widget.wheel.app.HourWheelView
+                android:id="@+id/dialog_driver_release_time_hour"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <com.qcx.mini.widget.wheel.app.MinuteWheelView
+                android:id="@+id/dialog_driver_release_time_minute"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

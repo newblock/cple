@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qcx.mini.activity.CashAccountActivity"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar_1"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="80px"
+        android:gravity="center"
+        android:text="添加账号"
+        android:background="@drawable/bg_border_gray1"
+        android:textColor="#FF484848"
+        android:textSize="16px" />
+
+</LinearLayout>

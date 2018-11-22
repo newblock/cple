@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.dexfun.layout.DexRelativeLayout
+            android:id="@+id/item_travel_message_view"
+            android:layout_width="245px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_circular_white">
+
+            <com.dexfun.layout.DexLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18px"
+                    android:layout_height="18px"
+                    android:src="@mipmap/icon_time" />
+
+                <TextView
+                    android:id="@+id/item_travel_message_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18px"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="04-21周二 10:20"
+                    android:textColor="#FF000000"
+                    android:textSize="13px" />
+            </com.dexfun.layout.DexLinearLayout>
+
+
+            <TextView
+                android:id="@+id/item_travel_message_startAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="22px"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="西二旗"
+                android:textColor="#FF404040"
+                android:textSize="14px" />
+
+            <TextView
+                android:id="@+id/item_travel_message_endAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="20px"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="42px"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="北京南站"
+                android:textColor="#FF404040"
+                android:textSize="14px" />
+
+
+        </com.dexfun.layout.DexRelativeLayout>
+
+</FrameLayout>

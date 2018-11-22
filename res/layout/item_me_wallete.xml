@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="12px"
+        android:layout_marginBottom="12px"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_me_wallet_item_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车费收入"
+                android:textColor="#FF484848"
+                android:textSize="17px"
+                />
+            <TextView
+                android:id="@+id/item_me_wallet_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年3月22日16:06"
+                android:textColor="#FF737373"
+                android:textSize="13px"
+                android:layout_marginTop="2px"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/item_me_wallet_item_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--元"
+            android:layout_marginRight="16px"
+            android:textColor="#FF484848"
+            android:textSize="13px"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#FFEDEDF0"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.qcx.mini.widget.CircleImageView
+        android:id="@+id/item_driver_info_icon"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_marginBottom="16px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="15px"
+        android:src="@mipmap/img_me" />
+
+    <TextView
+        android:id="@+id/item_driver_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="20px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="19px"
+        android:layout_toEndOf="@+id/item_driver_info_icon"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="昵称"
+        android:textColor="#FF232426"
+        android:textSize="16px" />
+
+    <ImageView
+        android:id="@+id/item_driver_info_sex"
+        android:layout_width="14px"
+        android:layout_height="14px"
+        android:layout_alignTop="@+id/item_driver_info_name"
+        android:layout_marginTop="3px"
+        android:layout_toEndOf="@+id/item_driver_info_name" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/item_driver_info_name"
+        android:layout_below="@+id/item_driver_info_name"
+        android:layout_marginTop="2px"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_driver_info_carNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_gray6"
+            android:textSize="11px"
+            android:paddingLeft="5px"
+            android:paddingRight="5px"
+            android:textColor="#FF232426"/>
+
+        <TextView
+            android:id="@+id/item_driver_info_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1px"
+            android:singleLine="true"
+            android:textColor="#FF939499"
+            android:layout_marginLeft="5px"
+            android:textSize="12px" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_driver_info_attention"
+        android:layout_width="16px"
+        android:layout_height="16px"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15px"
+        android:src="@mipmap/btn_follow_mini" />
+
+
+</RelativeLayout>

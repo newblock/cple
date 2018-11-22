@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/fragment_travel_detail_passenger_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <include layout="@layout/item_travel_top_view"
+            android:id="@+id/fragment_travel_detail_passenger_info_passenger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"/>
+
+        <include
+            android:id="@+id/fragment_travel_detail_passenger_info_travel"
+            layout="@layout/item_travel_2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+        <LinearLayout
+            android:id="@+id/fragment_travel_detail_passenger_info_function_bar"
+            android:layout_width="match_parent"
+            android:layout_height="49px"
+            android:background="@drawable/bg_circular_white"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fragment_travel_detail_passenger_info_function_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16px"
+                        android:layout_height="16px"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/btn_menu_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电话"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FF737373"
+                        android:textSize="13px" />
+
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fragment_travel_detail_passenger_info_function_navi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16px"
+                        android:layout_height="16px"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/btn_menu_navig" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="导航"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="#FF737373"
+                        android:textSize="13px" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fragment_travel_detail_passenger_info_function_more"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16px"
+                        android:layout_height="16px"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/btn_menu_more" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:text="更多"
+                        android:textColor="#FF737373"
+                        android:textSize="13px" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fragment_travel_detail_no_passenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/fragment_travel_detail_no_passenger_view"
+            android:layout_width="match_parent"
+            android:layout_height="187px"
+            android:orientation="vertical"
+            android:layout_marginTop="15px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44px"
+                android:text="此座为空,快去分享"
+                android:textColor="#FF939499"
+                android:textSize="14px"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/fragment_travel_detail_no_passenger_share"
+                android:layout_width="140px"
+                android:layout_height="36px"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16px"
+                android:layout_marginTop="17px"
+                android:background="@drawable/bg_circular_gradient_blue"
+                android:text="分享"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/fragment_travel_detail_no_passenger_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:text="删除此空座"
+                android:textColor="#FFFF6669"
+                android:textSize="14px"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray_line"/>
+
+            <LinearLayout
+                android:id="@+id/fragment_travel_detail_no_passenger_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14px"
+                android:layout_marginBottom="15px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16px"
+                    android:layout_height="16px"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/btn_menu_more" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:text="更多"
+                    android:textColor="#FF737373"
+                    android:textSize="13px" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完成行程"
+        android:textColor="#FF484848"
+        android:textSize="17px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="12px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018.07.09 00:05"
+        android:textColor="#FF939499"
+        android:textSize="14px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="38px"
+        android:layout_marginBottom="12px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2.08"
+        android:textColor="#FF616266"
+        android:textSize="20px"
+        android:layout_marginRight="15px"
+        android:layout_gravity="right|center_vertical"
+        />
+
+</FrameLayout>

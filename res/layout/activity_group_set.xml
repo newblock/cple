@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.GroupSetActivity">
+    <include layout="@layout/titlebar_1"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="59px"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_gravity="center_vertical"
+            android:text="群行程通知"
+            android:textSize="17px"
+            android:textColor="#737373"/>
+        <com.qcx.mini.widget.SwitchView
+            android:id="@+id/group_set_notification_switch"
+            android:layout_width="60px"
+            android:layout_height="43px"
+            android:layout_marginRight="16px"
+            android:layout_gravity="end|center_vertical" />
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"/>
+    <TextView
+        android:id="@+id/group_set_out"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:text="退出此群"
+        android:textSize="17px"
+        android:textColor="#FF6669"
+        android:gravity="center"/>
+
+</LinearLayout>

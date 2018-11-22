@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qcx.mini.activity.SubmitOrderActivity">
+
+    <ImageView
+        android:id="@+id/submit_order_back"
+        android:layout_width="32px"
+        android:layout_height="44px"
+        android:layout_marginLeft="10px"
+        android:src="@mipmap/btn_nav_back" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_marginTop="5px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16px"
+            android:text="票价"
+            android:textColor="#FF484848"
+            android:textSize="17px" />
+
+        <TextView
+            android:id="@+id/submit_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16px"
+            android:text="10元/位"
+            android:textColor="#FF499EFF"
+            android:textSize="17px" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="4px"
+        android:background="#FFEDEDF0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_marginTop="5px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/submit_order_seats_text"
+            android:layout_width="wrap_content"
+            android:layout_height="24px"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:text="座位数量"
+            android:textColor="#FF484848"
+            android:textSize="17px" />
+
+        <com.qcx.mini.widget.CircleTextView
+            android:id="@+id/submit_order_seats1"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_marginRight="16px"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17px"
+            app:CircleTextView_circle_color="#FFEDEDF0" />
+
+        <com.qcx.mini.widget.CircleTextView
+            android:id="@+id/submit_order_seats2"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_marginRight="16px"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17px"
+            app:CircleTextView_circle_color="#FFEDEDF0" />
+
+        <com.qcx.mini.widget.CircleTextView
+            android:id="@+id/submit_order_seats3"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_marginRight="16px"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17px"
+            app:CircleTextView_circle_color="#FF499EFF" />
+
+        <com.qcx.mini.widget.CircleTextView
+            android:id="@+id/submit_order_seats4"
+            android:layout_width="32px"
+            android:layout_height="32px"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="#FFFFFFFF"
+            android:textSize="17px"
+            app:CircleTextView_circle_color="#FFEDEDF0" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="4px"
+        android:background="#FFEDEDF0" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_marginTop="5px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:text="优惠券"
+            android:textColor="#FF484848"
+            android:textSize="17px" />
+
+        <TextView
+            android:id="@+id/submit_order_coupons_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无可用"
+            android:textColor="#FFB9BDC3"
+            android:textSize="17px" />
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:layout_marginRight="16px"
+            android:src="@mipmap/icon_return_left" />
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="4px"
+        android:background="#FFEDEDF0" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="89px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1万元出行保险"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认上车后生效"
+                android:textColor="#FF737373"
+                android:textSize="13px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/submit_order_insurance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1元"
+                android:textColor="#FF484848"
+                android:textSize="17px" />
+
+            <TextView
+                android:id="@+id/submit_order_insurance_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10元"
+                android:textColor="#FFB9BDC3"
+                android:textSize="13px" />
+
+
+        </LinearLayout>
+
+        <com.qcx.mini.widget.SwitchView
+            android:id="@+id/submit_order_insurance_switch"
+            android:layout_width="51px"
+            android:layout_height="31px"
+            android:layout_marginRight="16px" />
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:background="#FFEDEDF0" />
+
+    <TextView
+        android:id="@+id/submit_order_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:layout_marginLeft="16px"
+        android:layout_marginRight="16px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/bg_circular_gradient_blue"
+        android:gravity="center"
+        android:text="合计31元 提交订单"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16px" />
+
+
+</LinearLayout>
