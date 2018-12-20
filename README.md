@@ -64,4 +64,4 @@
 ##### Email: hr@quchuxing.com
 ##### 微信公众号: 趣出行CPLE
 
- ![image](https://github.com/newblock/cple/scan.png)
+ ![image](https://github.com/newblock/cple/blob/master/scan.png)
